@@ -1,0 +1,29 @@
+.contact{
+    text-align: center;
+    color: #fff;
+    background: #9fd8f5;
+    display: block;
+    padding: 100px 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.link{
+}
+
+.icon{
+    /* width: 1.28571429em; */
+    /* text-align: center;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased; */
+}
+
+.icon:before {
+    content: "\f099";
+}

@@ -1,0 +1,31 @@
+.projects{
+  display: block;
+  width:100%;
+  z-index: 2;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow: auto;
+}
+
+.projectRow{
+}
+
+.right{
+    float: right;
+    width: 80%;
+}
+
+.left{
+    float: left;
+    width: 80%;
+}
+
+.title{
+    font-weight: bolder;
+    font-size: 50px;
+    padding: 50px;
+    color: #8386a0;
+}

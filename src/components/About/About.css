@@ -1,0 +1,12 @@
+.about{
+    text-align: center;
+    color: #fff;
+    background: #6477bd;;
+    display: block;
+    padding: 100px 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* bottom: 0; */
+}

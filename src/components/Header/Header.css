@@ -1,0 +1,18 @@
+.header{
+    text-align: center;
+    color: #fff;
+    background: #6477bd;;
+    display: block;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.profile{
+    border-radius: 600px;
+    width: 350px;
+    height: 450px;
+}
