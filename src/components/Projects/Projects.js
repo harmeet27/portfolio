@@ -24,7 +24,7 @@ class Projects extends React.PureComponent {
   render() {
     return (
       <React.Fragment>
-        <div className="projects" ref={this.props.projectsRef}>
+        <div className="projects">
           <div className="title">Projects</div>
           {this.renderProjects()}
         </div>

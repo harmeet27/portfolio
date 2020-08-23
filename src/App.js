@@ -46,8 +46,8 @@ class App extends React.Component {
   return (
     <div className="App">
       <Navigation onClick={this.handleTabClick} isDesktop={this.state.isDesktop}/>
-      <Header aboutRef={this.aboutRef} />
-      <Projects projectsRef={this.projectsRef} contactRef={this.contactRef}/>
+      <Header aboutRef={this.aboutRef} projectsRef={this.projectsRef}/>
+      <Projects contactRef={this.contactRef}/>
     </div>
   );
   }

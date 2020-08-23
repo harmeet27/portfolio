@@ -7,6 +7,7 @@ class Navigation extends React.PureComponent {
     super(props);
     this.state = {
       openMenu: false,
+      activeTab: 'about'
     };
   }
 
@@ -19,7 +20,8 @@ class Navigation extends React.PureComponent {
 
   handleMenuClick = (menuItem) => {
     return this.setState({
-      openMenu: false
+      openMenu: false,
+      activeTab: menuItem
     }, () => this.props.onClick(menuItem));
   }
 
@@ -34,26 +36,28 @@ class Navigation extends React.PureComponent {
   };
 
   renderDesktopMenu = () => {
+    const { activeTab } = this.state;
+    console.log(activeTab);
     return (
       <div className="desktopMenu">
         <a
           href="#about"
-          className="tab"
-          onClick={() => this.props.onClick("about")}
+          className={activeTab === 'about' ? "tab active" : "tab"}
+          onClick={() => this.handleMenuClick('about')}
         >
           About
         </a>
         <a
           href="#projects"
-          className="tab"
-          onClick={() => this.props.onClick("projects")}
+          className={activeTab === 'projects' ? "tab active" : "tab"}
+          onClick={() => this.handleMenuClick('projects')}
         >
           Projects
         </a>
         <a
           href="#contact"
-          className="tab"
-          onClick={() => this.props.onClick("contact")}
+          className={activeTab === 'contact' ? "tab active" : "tab"}
+          onClick={() => this.handleMenuClick('contact')}
         >
           Contact
         </a>
@@ -75,7 +79,6 @@ class Navigation extends React.PureComponent {
               <a
                 href="#about"
                 className="link"
-                // onClick={() => this.props.onClick("about")}
                 onClick={() => this.handleMenuClick('about')}
               >
                 About
