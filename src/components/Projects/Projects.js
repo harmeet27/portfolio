@@ -1,8 +1,8 @@
 import React from "react";
 import "./Projects.css";
 import Card from "../Card/Card";
-import About from '../About/About';
-import Contact from '../Contact/Contact';
+import About from "../About/About";
+import Contact from "../Contact/Contact";
 
 import { projects } from "../../data/projects.js";
 
@@ -10,24 +10,28 @@ class Projects extends React.PureComponent {
   renderProjects = () => {
     return projects.map((project, i) => {
       return (
-        <div className="projectRow">
-          {i % 2 === 0 && <Card data={project} className="left" />}
-          {i % 2 !== 0 && <Card data={project} className="right" />}
+        <div className="projectRow" key={project.title}>
+          {i % 2 === 0 && (
+            <Card data={project} className="left" key={project.title} />
+          )}
+          {i % 2 !== 0 && (
+            <Card data={project} className="right" key={project.title} />
+          )}
         </div>
       );
     });
   };
   render() {
-    return(
-    <div>
-    <div className="projects">
-      <div className="title">Work Projects</div>
-      {this.renderProjects()}
-    </div>
-    <About/>
-    <Contact />
-    </div>
-    )
+    return (
+      <React.Fragment>
+        <div className="projects" ref={this.props.projectsRef}>
+          <div className="title">Projects</div>
+          {this.renderProjects()}
+        </div>
+        <About contactRef={this.props.contactRef} />
+        <Contact />
+      </React.Fragment>
+    );
   }
 }
 

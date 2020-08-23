@@ -2,9 +2,7 @@
   display: block;
   width:100%;
   z-index: 2;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 25px;
+  margin: auto;
   overflow: auto;
 }
 

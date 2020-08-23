@@ -12,7 +12,7 @@ const Card = (props) => {
         <div className="technologies">
          <div className="label">Technologies Used:</div>
         {technology.map((tech) => {
-          return <div className="tag">{tech}</div>
+          return <div className="tag" key={tech}>{tech}</div>
         })}</div>
         </div>
       </div>
