@@ -5,6 +5,9 @@ import uiElements from '../ui-elements.png';
 import billing from '../billing.png';
 import jobserver from '../jobserver.png';
 import selfService from '../self-service.png';
+import killAnalog from '../killAnalog.png';
+import genie from '../genie.mp4';
+import voting from '../voting.mp4';
 
 export const projects = [
   {
@@ -53,17 +56,20 @@ export const projects = [
     "title": "Kill Analog",
     "description": "A Public Web Portal for credit cards, debit cards and cash lines. It included working on microservices and creating REST APIs for these services.",
     "technology": ["Java", "Spring", "REST", "Angular JS", "iframes"],
+    "icon": killAnalog
   },
   {
     "title": "Website Walkthrough",
     "description": "A virtual assistant for the not so tech savvy people, it helps to get guided walkthrough of a website based on an individual’s query.",
     "technology": ["AWS Lex chatbot", "Angular JS", "Node JS"],
-    "isHobby": true
+    "isHobby": true,
+    "video": genie
   },
   {
     "title": "Electoral Voting Application",
     "description": "Based on Ethereum blockchain an application to vote for different candidates.",
     "technology": ["Ganache", "Ethereum Test Network", "Truffle", "Web3.js", "React JS"],
-    "isHobby": true
+    "isHobby": true,
+    "video": voting
   }
 ];

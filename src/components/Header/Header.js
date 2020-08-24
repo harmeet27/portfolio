@@ -6,6 +6,7 @@ import tech from "../../tech.svg";
 import writer from "../../writer.svg";
 import foodie from "../../foodie.svg";
 import backpack from "../../backpack.svg";
+import cv from "../../harmeet_kaur_2020.pdf";
 
 class Header extends React.PureComponent {
   render() {
@@ -13,6 +14,10 @@ class Header extends React.PureComponent {
       <div className="header" ref={this.props.aboutRef}>
         <img src={profile} alt="profile" className="profile" />
         <h1>HI!, I am Harmeet</h1>
+        <a href={cv} target="_blank" rel="noopener noreferrer" download="harmeetkaur.pdf">
+        <button className="cv">Download CV</button>
+        </a>
+        <br/>
         <span className="tagLine" ref={this.props.projectsRef}>
           <img className="icon" alt="web" src={programmer} /> Web Developer |
           <img className="icon" alt="tech" src={tech} /> Technophile |

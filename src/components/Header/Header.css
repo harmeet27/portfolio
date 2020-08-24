@@ -1,21 +1,40 @@
-.header{
-    text-align: center;
-    color: #fff;
-    background: #6477bd;;
-    display: block;
-    padding-top: 90px;
-    padding-bottom: 50px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+.header {
+  text-align: center;
+  color: #fff;
+  background: #6477bd;
+  display: block;
+  padding-top: 90px;
+  padding-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.profile{
-    border-radius: 600px;
-    width: 350px;
-    height: 450px;
+.profile {
+  border-radius: 600px;
+  width: 350px;
+  height: 450px;
 }
 
-.tagLine{
+.tagLine {
+}
+
+.cv {
+  padding: 15px;
+  margin-bottom: 25px;
+  background: #60a3bc;
+  border-radius: 50px;
+  display: inline-block;
+  width: 150px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.cv:hover {
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
 }

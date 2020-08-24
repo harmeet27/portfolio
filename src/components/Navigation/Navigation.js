@@ -37,7 +37,6 @@ class Navigation extends React.PureComponent {
 
   renderDesktopMenu = () => {
     const { activeTab } = this.state;
-    console.log(activeTab);
     return (
       <div className="desktopMenu">
         <a
