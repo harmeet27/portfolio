@@ -6,7 +6,7 @@ import tech from "../../tech.svg";
 import writer from "../../writer.svg";
 import foodie from "../../foodie.svg";
 import backpack from "../../backpack.svg";
-import cv from "../../harmeet_kaur_2020.pdf";
+import cv from "../../Harmeet_Kaur_2021.pdf";
 
 class Header extends React.PureComponent {
   render() {
