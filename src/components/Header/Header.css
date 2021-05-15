@@ -1,7 +1,7 @@
 .header {
   text-align: center;
   color: #fff;
-  background: #6477bd;
+  background: #bd6964;
   display: block;
   padding-top: 90px;
   padding-bottom: 50px;
@@ -12,9 +12,9 @@
 }
 
 .profile {
-  border-radius: 600px;
-  width: 350px;
-  height: 450px;
+  border-radius: 340px;
+  width: 340px;
+  height: 415px;
 }
 
 .tagLine {
@@ -23,7 +23,7 @@
 .cv {
   padding: 15px;
   margin-bottom: 25px;
-  background: #60a3bc;
+  background: #0e143c;
   border-radius: 50px;
   display: inline-block;
   width: 150px;

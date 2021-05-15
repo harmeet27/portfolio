@@ -1,0 +1,27 @@
+.recommendation{
+    display: block;
+    width:100%;
+    z-index: 2;
+    margin: auto;
+    overflow: auto;
+  }
+  
+  .rcRow{
+  }
+  
+  .right{
+      float: right;
+      width: 80%;
+  }
+  
+  .left{
+      float: left;
+      width: 80%;
+  }
+  
+  .title{
+      font-weight: bolder;
+      font-size: 50px;
+      padding: 14px;
+      color: #333333;
+  }

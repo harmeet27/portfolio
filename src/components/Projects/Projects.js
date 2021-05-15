@@ -12,10 +12,10 @@ class Projects extends React.PureComponent {
       return (
         <div className="projectRow" key={project.title}>
           {i % 2 === 0 && (
-            <Card data={project} className="left" key={project.title} />
+            <Card data={project} className="left" key={project.title} hasDescription />
           )}
           {i % 2 !== 0 && (
-            <Card data={project} className="right" key={project.title} />
+            <Card data={project} className="right" key={project.title} hasDescription />
           )}
         </div>
       );
@@ -25,11 +25,11 @@ class Projects extends React.PureComponent {
     return (
       <React.Fragment>
         <div className="projects">
-          <div className="title">Projects</div>
+          <div className="title">My Work</div>
           {this.renderProjects()}
         </div>
         <About contactRef={this.props.contactRef} />
-        <Contact />
+        <Contact recommendationsRef={this.props.recommendationsRef}/>
       </React.Fragment>
     );
   }

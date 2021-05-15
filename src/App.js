@@ -2,6 +2,7 @@ import React from 'react';
 import Navigation from './components/Navigation/Navigation';
 import Header from './components/Header/Header';
 import Projects from './components/Projects/Projects';
+import Recommendations from './components/Recommendations/Recommendation'
 import './App.css';
 
 class App extends React.Component {
@@ -10,6 +11,7 @@ class App extends React.Component {
     this.aboutRef = React.createRef()  
     this.projectsRef = React.createRef()
     this.contactRef = React.createRef()
+    this.recommendationsRef = React.createRef()
     this.state = {
       isDesktop: false
     };
@@ -33,12 +35,14 @@ class App extends React.Component {
 
 
   handleTabClick = (tab) => {
-    if(tab === 'projects'){
+    if(tab === 'work'){
       this.scrollToMyRef(this.projectsRef);
     } else if ( tab === 'contact') {
       this.scrollToMyRef(this.contactRef);
     } else if ( tab === 'about') {
       this.scrollToMyRef(this.aboutRef);
+    } else if ( tab === 'recommendations') {
+      this.scrollToMyRef(this.recommendationsRef);
     }
   }
 
@@ -47,7 +51,8 @@ class App extends React.Component {
     <div className="App">
       <Navigation onClick={this.handleTabClick} isDesktop={this.state.isDesktop}/>
       <Header aboutRef={this.aboutRef} projectsRef={this.projectsRef}/>
-      <Projects contactRef={this.contactRef}/>
+      <Projects contactRef={this.contactRef} recommendationsRef={this.recommendationsRef}/>
+      <Recommendations/>
     </div>
   );
   }

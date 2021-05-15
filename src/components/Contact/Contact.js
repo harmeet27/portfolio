@@ -12,7 +12,7 @@ class Contact extends React.PureComponent{
      return (
      <div className="contact">
         <h1>Around The Web</h1>
-        <p><a href='https://github.com/harmeet27' rel="noopener noreferrer" target="_blank" className="link">
+        <p ref={this.props.recommendationsRef}><a href='https://github.com/harmeet27' rel="noopener noreferrer" target="_blank" className="link">
             <img className="icon github" alt="github" src={github}/></a> 
             <a href='https://www.linkedin.com/in/harmeet-kaur-8856ba44/' rel="noopener noreferrer" target="_blank" className="link">
             <img className="icon linkedin" alt="linkedin" src={linkedin}/></a> 

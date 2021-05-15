@@ -71,11 +71,11 @@ class Navigation extends Component {
           About
         </a>
         <a
-          href="#projects"
-          className={activeTab === "projects" ? "tab active" : "tab"}
-          onClick={() => this.handleMenuClick("projects")}
+          href="#work"
+          className={activeTab === "work" ? "tab active" : "tab"}
+          onClick={() => this.handleMenuClick("work")}
         >
-          Projects
+          Work
         </a>
         <a
           href="#contact"
@@ -83,6 +83,13 @@ class Navigation extends Component {
           onClick={() => this.handleMenuClick("contact")}
         >
           Contact
+        </a>
+        <a
+          href="#recommendations"
+          className={activeTab === "recommendations" ? "tab active" : "tab"}
+          onClick={() => this.handleMenuClick("recommendations")}
+        >
+          Recommendations
         </a>
       </div>
     );
@@ -106,11 +113,11 @@ class Navigation extends Component {
                 About
               </a>
               <a
-                href="#projects"
+                href="#work"
                 className="link"
-                onClick={() => this.handleMenuClick("projects")}
+                onClick={() => this.handleMenuClick("work")}
               >
-                Projects
+                Work
               </a>
               <a
                 href="#contact"
@@ -118,6 +125,13 @@ class Navigation extends Component {
                 onClick={() => this.handleMenuClick("contact")}
               >
                 Contact
+              </a>
+              <a
+                href="#recommendations"
+                className="link"
+                onClick={() => this.handleMenuClick("recommendations")}
+              >
+                Recommendations
               </a>
             </div>
           )}
