@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.416d8d6c.chunk.css",
+    "main.css": "/static/css/main.b08dcba2.chunk.css",
     "main.js": "/static/js/main.33e595d3.chunk.js",
     "main.js.map": "/static/js/main.33e595d3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6b3488d1.js",
@@ -8,9 +8,9 @@
     "static/js/2.1f47e57e.chunk.js": "/static/js/2.1f47e57e.chunk.js",
     "static/js/2.1f47e57e.chunk.js.map": "/static/js/2.1f47e57e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f2bd050476776194b9a66e7c2a18ee72.js": "/precache-manifest.f2bd050476776194b9a66e7c2a18ee72.js",
+    "precache-manifest.dc8dc2a477f64ec35e546989764ac4c3.js": "/precache-manifest.dc8dc2a477f64ec35e546989764ac4c3.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.416d8d6c.chunk.css.map": "/static/css/main.416d8d6c.chunk.css.map",
+    "static/css/main.b08dcba2.chunk.css.map": "/static/css/main.b08dcba2.chunk.css.map",
     "static/js/2.1f47e57e.chunk.js.LICENSE.txt": "/static/js/2.1f47e57e.chunk.js.LICENSE.txt",
     "static/media/Harmeet_Kaur_2021.pdf": "/static/media/Harmeet_Kaur_2021.5c8a7e18.pdf",
     "static/media/alc.png": "/static/media/alc.e91ad2fa.png",
@@ -38,7 +38,7 @@
   "entrypoints": [
     "static/js/runtime-main.6b3488d1.js",
     "static/js/2.1f47e57e.chunk.js",
-    "static/css/main.416d8d6c.chunk.css",
+    "static/css/main.b08dcba2.chunk.css",
     "static/js/main.33e595d3.chunk.js"
   ]
 }
