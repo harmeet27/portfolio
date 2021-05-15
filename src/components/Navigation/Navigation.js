@@ -1,8 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 import "./Navigation.css";
-import svg from "../../my-logo.svg";
 
-class Navigation extends React.PureComponent {
+class Navigation extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -67,7 +66,6 @@ class Navigation extends React.PureComponent {
     return (
       <React.Fragment>
         <nav className="navBar">
-          <img src={svg} alt="Harmeet27.com" className="logo" />
           <div className="navBarRight">
             {this.props.isDesktop
               ? this.renderDesktopMenu()
