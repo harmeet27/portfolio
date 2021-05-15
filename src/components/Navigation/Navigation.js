@@ -1,28 +1,53 @@
 import React, { Component } from "react";
+import ReactDOM from "react-dom";
 import "./Navigation.css";
 
 class Navigation extends Component {
   constructor(props) {
     super(props);
+    this.dropdown = React.createRef();
     this.state = {
       openMenu: false,
-      activeTab: 'about'
+      activeTab: "about",
     };
   }
 
-  toggle = () => {
-     const openMenuValue = !this.state.openMenu; 
-     this.setState({
-       openMenu: openMenuValue
-     })
+  componentDidMount() {
+    document.addEventListener("click", this.handleClickOutside, true);
   }
 
-  handleMenuClick = (menuItem) => {
-    return this.setState({
-      openMenu: false,
-      activeTab: menuItem
-    }, () => this.props.onClick(menuItem));
+  componentWillUnmount() {
+    document.removeEventListener("click", this.handleClickOutside, true);
   }
+
+  handleClickOutside = (e) => {
+    const menuClassNameList = ["menu", "iconBar"];
+    if (
+      !ReactDOM.findDOMNode(this.dropdown.current)?.contains(e.target) &&
+      !menuClassNameList.includes(e.target.className)
+    ) {
+      this.setState({
+        openMenu: false,
+      });
+    }
+  };
+
+  toggle = (e) => {
+    const openMenuValue = !this.state.openMenu;
+    this.setState({
+      openMenu: openMenuValue,
+    });
+  };
+
+  handleMenuClick = (menuItem) => {
+    return this.setState(
+      {
+        openMenu: false,
+        activeTab: menuItem,
+      },
+      () => this.props.onClick(menuItem)
+    );
+  };
 
   renderMobileMenu = () => {
     return (
@@ -40,22 +65,22 @@ class Navigation extends Component {
       <div className="desktopMenu">
         <a
           href="#about"
-          className={activeTab === 'about' ? "tab active" : "tab"}
-          onClick={() => this.handleMenuClick('about')}
+          className={activeTab === "about" ? "tab active" : "tab"}
+          onClick={() => this.handleMenuClick("about")}
         >
           About
         </a>
         <a
           href="#projects"
-          className={activeTab === 'projects' ? "tab active" : "tab"}
-          onClick={() => this.handleMenuClick('projects')}
+          className={activeTab === "projects" ? "tab active" : "tab"}
+          onClick={() => this.handleMenuClick("projects")}
         >
           Projects
         </a>
         <a
           href="#contact"
-          className={activeTab === 'contact' ? "tab active" : "tab"}
-          onClick={() => this.handleMenuClick('contact')}
+          className={activeTab === "contact" ? "tab active" : "tab"}
+          onClick={() => this.handleMenuClick("contact")}
         >
           Contact
         </a>
@@ -71,31 +96,31 @@ class Navigation extends Component {
               ? this.renderDesktopMenu()
               : this.renderMobileMenu()}
           </div>
-        {!this.props.isDesktop && this.state.openMenu && (
-            <div className="dropdown">
+          {!this.props.isDesktop && this.state.openMenu && (
+            <div className="dropdown" ref={this.dropdown}>
               <a
                 href="#about"
                 className="link"
-                onClick={() => this.handleMenuClick('about')}
+                onClick={() => this.handleMenuClick("about")}
               >
                 About
               </a>
               <a
                 href="#projects"
                 className="link"
-                onClick={() => this.handleMenuClick('projects')}
+                onClick={() => this.handleMenuClick("projects")}
               >
                 Projects
               </a>
               <a
                 href="#contact"
                 className="link"
-                onClick={() => this.handleMenuClick('contact')}
+                onClick={() => this.handleMenuClick("contact")}
               >
                 Contact
               </a>
             </div>
-        )}
+          )}
         </nav>
       </React.Fragment>
     );
