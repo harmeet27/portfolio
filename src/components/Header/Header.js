@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import profile from "../../profile.jpg";
+import profile from "../../profile.png";
 import programmer from "../../programmer.svg";
 import tech from "../../tech.svg";
 import writer from "../../writer.svg";
