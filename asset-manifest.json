@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.12de6b5e.chunk.css",
-    "main.js": "/static/js/main.ae6d2072.chunk.js",
-    "main.js.map": "/static/js/main.ae6d2072.chunk.js.map",
+    "main.css": "/static/css/main.e6c03f5e.chunk.css",
+    "main.js": "/static/js/main.64a165b0.chunk.js",
+    "main.js.map": "/static/js/main.64a165b0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6b3488d1.js",
     "runtime-main.js.map": "/static/js/runtime-main.6b3488d1.js.map",
-    "static/js/2.e79f12d4.chunk.js": "/static/js/2.e79f12d4.chunk.js",
-    "static/js/2.e79f12d4.chunk.js.map": "/static/js/2.e79f12d4.chunk.js.map",
+    "static/js/2.8a8ec7b8.chunk.js": "/static/js/2.8a8ec7b8.chunk.js",
+    "static/js/2.8a8ec7b8.chunk.js.map": "/static/js/2.8a8ec7b8.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ba9a5f193d2b6fa690e87d07d00c6a4b.js": "/precache-manifest.ba9a5f193d2b6fa690e87d07d00c6a4b.js",
+    "precache-manifest.eaaedaa4711f8a6415a64f176ed22b4b.js": "/precache-manifest.eaaedaa4711f8a6415a64f176ed22b4b.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.12de6b5e.chunk.css.map": "/static/css/main.12de6b5e.chunk.css.map",
-    "static/js/2.e79f12d4.chunk.js.LICENSE.txt": "/static/js/2.e79f12d4.chunk.js.LICENSE.txt",
+    "static/css/main.e6c03f5e.chunk.css.map": "/static/css/main.e6c03f5e.chunk.css.map",
+    "static/js/2.8a8ec7b8.chunk.js.LICENSE.txt": "/static/js/2.8a8ec7b8.chunk.js.LICENSE.txt",
     "static/media/Harmeet_Kaur_2021.pdf": "/static/media/Harmeet_Kaur_2021.5c8a7e18.pdf",
+    "static/media/MyName.mp3": "/static/media/MyName.7a1f0968.mp3",
     "static/media/alc.png": "/static/media/alc.e91ad2fa.png",
     "static/media/backpack.svg": "/static/media/backpack.73e74fd4.svg",
     "static/media/billing.png": "/static/media/billing.1b7a38fb.png",
@@ -33,6 +34,7 @@
     "static/media/rc5.png": "/static/media/rc5.97f953e4.png",
     "static/media/self-service.png": "/static/media/self-service.48f1afdf.png",
     "static/media/sparkola.png": "/static/media/sparkola.cf17a13e.png",
+    "static/media/speakerOn.gif": "/static/media/speakerOn.988428ea.gif",
     "static/media/stack-overflow.svg": "/static/media/stack-overflow.592ddf02.svg",
     "static/media/tech.svg": "/static/media/tech.b4405760.svg",
     "static/media/ui-elements.png": "/static/media/ui-elements.75eacf88.png",
@@ -42,8 +44,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.6b3488d1.js",
-    "static/js/2.e79f12d4.chunk.js",
-    "static/css/main.12de6b5e.chunk.css",
-    "static/js/main.ae6d2072.chunk.js"
+    "static/js/2.8a8ec7b8.chunk.js",
+    "static/css/main.e6c03f5e.chunk.css",
+    "static/js/main.64a165b0.chunk.js"
   ]
 }
