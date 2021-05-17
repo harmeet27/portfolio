@@ -17,6 +17,7 @@
 }
 
 .tagLine {
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
 
 .cv {
@@ -42,6 +43,7 @@
   height: 28px;
   width: 28px;
   cursor: pointer;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
 
 .minimal{
@@ -53,4 +55,8 @@
   outline: none;
   border: none;
   background-color: #bd6964;
+}y
+
+.icon{
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
