@@ -39,14 +39,14 @@
   transition: all 0.4s ease 0s;
 }
 
-.speaker{
+.speaker {
   height: 28px;
   width: 28px;
   cursor: pointer;
   filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
 
-.minimal{
+.minimal {
   border: none;
   background-color: #bd6964;
 }
@@ -55,8 +55,25 @@
   outline: none;
   border: none;
   background-color: #bd6964;
-}y
+}
 
-.icon{
+.icon {
   filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+.nameContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  width: 320px;
+  white-space: nowrap;
+  animation: animated-text 3s steps(29, end) 0s 1 normal both;
+  overflow: hidden;
+}
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 300px;}
 }

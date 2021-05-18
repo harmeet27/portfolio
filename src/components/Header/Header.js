@@ -8,7 +8,7 @@ import foodie from "../../foodie.svg";
 import backpack from "../../backpack.svg";
 import speaker from "../../speakerOn.gif";
 import speakerOff from "../../speakerOff.png";
-import audio from "../../MyName.mp3"
+import audio from "../../MyName.mp3";
 import cv from "../../Harmeet_Kaur_2021.pdf";
 
 class Header extends React.PureComponent {
@@ -16,28 +16,32 @@ class Header extends React.PureComponent {
     isPlaying: false,
   };
 
-  audio = new Audio(audio)
+  audio = new Audio(audio);
 
   componentDidMount() {
-    this.audio.addEventListener('ended', () => this.setState({ isPlaying: false }));
+    this.audio.addEventListener("ended", () =>
+      this.setState({ isPlaying: false })
+    );
   }
 
   componentWillUnmount() {
-    this.audio.removeEventListener('ended', () => this.setState({ isPlaying: false }));  
+    this.audio.removeEventListener("ended", () =>
+      this.setState({ isPlaying: false })
+    );
   }
 
   togglePlay = () => {
     this.setState({ isPlaying: !this.state.isPlaying }, () => {
       this.state.isPlaying ? this.audio.play() : this.audio.pause();
     });
-  }
+  };
 
   render() {
     return (
       <div className="header" ref={this.props.aboutRef}>
         <img src={profile} alt="profile" className="profile" />
-        <h1>
-          HI!, I am Harmeet{" "}
+        <span className="nameContainer">
+          <h1 className="name"> HI!, I am Harmeet.</h1>
           {
             <button className="minimal" onClick={this.togglePlay}>
               {!this.state.isPlaying ? (
@@ -47,7 +51,7 @@ class Header extends React.PureComponent {
               )}
             </button>
           }
-        </h1>
+        </span>
         <a
           href={cv}
           target="_blank"
