@@ -1,13 +1,13 @@
-import sparkola from '../sparkola.png';
-import alc from '../alc.png';
-import uiMetrics from '../ui-metrics.png';
-import uiElements from '../ui-elements.png';
-import billing from '../billing.png';
-import jobserver from '../jobserver.png';
-import selfService from '../self-service.png';
-import killAnalog from '../killAnalog.png';
-import genie from '../genie.mp4';
-import voting from '../voting.mp4';
+import sparkola from '../assets/sparkola.png';
+import alc from '../assets/alc.png';
+import uiMetrics from '../assets/ui-metrics.png';
+import uiElements from '../assets/ui-elements.png';
+import billing from '../assets/billing.png';
+import jobserver from '../assets/jobserver.png';
+import selfService from '../assets/self-service.png';
+import killAnalog from '../assets/killAnalog.png';
+import genie from '../assets/genie.mp4';
+import voting from '../assets/voting.mp4';
 
 export const projects = [
   {

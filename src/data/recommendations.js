@@ -1,8 +1,8 @@
-import rc1 from '../rc1.png';
-import rc2 from '../rc2.png';
-import rc3 from '../rc3.png';
-import rc4 from '../rc4.png';
-import rc5 from '../rc5.png';
+import rc1 from '../assets/rc1.png';
+import rc2 from '../assets/rc2.png';
+import rc3 from '../assets/rc3.png';
+import rc4 from '../assets/rc4.png';
+import rc5 from '../assets/rc5.png';
 
 export const recommendations = [
   {

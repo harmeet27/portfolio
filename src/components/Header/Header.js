@@ -1,15 +1,15 @@
 import React from "react";
 import "./Header.css";
-import profile from "../../profile.png";
-import programmer from "../../programmer.svg";
-import tech from "../../tech.svg";
-import writer from "../../writer.svg";
-import foodie from "../../foodie.svg";
-import backpack from "../../backpack.svg";
-import speaker from "../../speakerOn.gif";
-import speakerOff from "../../speakerOff.png";
-import audio from "../../MyName.mp3";
-import cv from "../../Harmeet_Kaur_2021.pdf";
+import profile from "../../assets/profile.png";
+import programmer from "../../assets/programmer.svg";
+import tech from "../../assets/tech.svg";
+import writer from "../../assets/writer.svg";
+import foodie from "../../assets/foodie.svg";
+import backpack from "../../assets/backpack.svg";
+import speaker from "../../assets/speakerOn.gif";
+import speakerOff from "../../assets/speakerOff.png";
+import audio from "../../assets/MyName.mp3";
+import cv from "../../assets/Harmeet_Kaur_2021.pdf";
 
 class Header extends React.PureComponent {
   state = {
