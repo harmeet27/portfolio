@@ -7,8 +7,7 @@ class Navigation extends Component {
     super(props);
     this.dropdown = React.createRef();
     this.state = {
-      openMenu: false,
-      activeTab: "about",
+      openMenu: false
     };
   }
 
@@ -42,8 +41,7 @@ class Navigation extends Component {
   handleMenuClick = (menuItem) => {
     return this.setState(
       {
-        openMenu: false,
-        activeTab: menuItem,
+        openMenu: false
       },
       () => this.props.onClick(menuItem)
     );
@@ -60,7 +58,7 @@ class Navigation extends Component {
   };
 
   renderDesktopMenu = () => {
-    const { activeTab } = this.state;
+    const { activeTab } = this.props;
     return (
       <div className="desktopMenu">
         <a

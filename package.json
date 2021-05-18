@@ -1,4 +1,4 @@
-{ 
+{
   "homepage": "https://harmeet27.github.io",
   "name": "my-portfolio",
   "version": "0.1.0",
@@ -10,11 +10,12 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-player": "^2.6.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "serve": "^11.3.2"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && echo \"kaurharmeet.com\" > build/CNAME",
     "deploy": "gh-pages -d build",
     "serve": "react-scripts start",
     "build": "react-scripts build",

@@ -1,19 +1,20 @@
-import React from 'react';
-import Navigation from './components/Navigation/Navigation';
-import Header from './components/Header/Header';
-import Projects from './components/Projects/Projects';
-import Recommendations from './components/Recommendations/Recommendation'
-import './App.css';
+import React from "react";
+import Navigation from "./components/Navigation/Navigation";
+import Header from "./components/Header/Header";
+import Projects from "./components/Projects/Projects";
+import Recommendations from "./components/Recommendations/Recommendation";
+import "./App.css";
 
 class App extends React.Component {
   constructor(props) {
-    super(props)
-    this.aboutRef = React.createRef()  
-    this.projectsRef = React.createRef()
-    this.contactRef = React.createRef()
-    this.recommendationsRef = React.createRef()
+    super(props);
+    this.aboutRef = React.createRef();
+    this.projectsRef = React.createRef();
+    this.contactRef = React.createRef();
+    this.recommendationsRef = React.createRef();
     this.state = {
-      isDesktop: false
+      isDesktop: false,
+      activeTab: "about",
     };
     this.updatePredicate = this.updatePredicate.bind(this);
   }
@@ -21,6 +22,21 @@ class App extends React.Component {
   componentDidMount() {
     this.updatePredicate();
     window.addEventListener("resize", this.updatePredicate);
+  }
+
+  componentDidUpdate(prevprops) {
+    if (this.props.location.hash === "") {
+      this.props.history.push("#about");
+    } else {
+      const tab = this.props.location.hash.split("#");
+      if (prevprops.location.hash !== this.props.location.hash) {
+        this.handleTabClick(tab[1]);
+      } else {
+        if (this.state.activeTab !== tab[1]) {
+          this.handleTabClick(tab[1]);
+        }
+      }
+    }
   }
 
   componentWillUnmount() {
@@ -31,30 +47,45 @@ class App extends React.Component {
     this.setState({ isDesktop: window.innerWidth > 750 });
   }
 
-  scrollToMyRef = (ref) => window.scrollTo({ behavior: 'smooth', top: ref.current.offsetTop });
-
+  scrollToMyRef = (ref) =>
+    window.scrollTo({ behavior: "smooth", top: ref.current.offsetTop });
 
   handleTabClick = (tab) => {
-    if(tab === 'work'){
-      this.scrollToMyRef(this.projectsRef);
-    } else if ( tab === 'contact') {
-      this.scrollToMyRef(this.contactRef);
-    } else if ( tab === 'about') {
-      this.scrollToMyRef(this.aboutRef);
-    } else if ( tab === 'recommendations') {
-      this.scrollToMyRef(this.recommendationsRef);
+    let activeRef;
+    let currentTab = tab;
+    if (currentTab === "work") {
+      activeRef = this.projectsRef;
+    } else if (currentTab === "contact") {
+      activeRef = this.contactRef;
+    } else if (currentTab === "about") {
+      activeRef = this.aboutRef;
+    } else if (currentTab === "recommendations") {
+      activeRef = this.recommendationsRef;
     }
-  }
+    this.setState(
+      {
+        activeTab: tab,
+      },
+      () => this.scrollToMyRef(activeRef)
+    );
+  };
 
-  render(){
-  return (
-    <div className="App">
-      <Navigation onClick={this.handleTabClick} isDesktop={this.state.isDesktop}/>
-      <Header aboutRef={this.aboutRef} projectsRef={this.projectsRef}/>
-      <Projects contactRef={this.contactRef} recommendationsRef={this.recommendationsRef}/>
-      <Recommendations/>
-    </div>
-  );
+  render() {
+    return (
+      <div className="App">
+        <Navigation
+          onClick={this.handleTabClick}
+          isDesktop={this.state.isDesktop}
+          activeTab={this.state.activeTab}
+        />
+        <Header aboutRef={this.aboutRef} projectsRef={this.projectsRef} />
+        <Projects
+          contactRef={this.contactRef}
+          recommendationsRef={this.recommendationsRef}
+        />
+        <Recommendations />
+      </div>
+    );
   }
 }
 
