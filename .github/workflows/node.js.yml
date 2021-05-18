@@ -31,4 +31,4 @@ jobs:
     - run: git config --global user.name harmeet27
     - run: git config -l
     - run: npm ci
-    - run: npm run deploy
+    - run: npm run build
