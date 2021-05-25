@@ -1,4 +1,5 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/harmeet27/portfolio/badge)](https://www.codefactor.io/repository/github/harmeet27/portfolio)
+[![Build Status](https://travis-ci.com/harmeet27/portfolio.svg?branch=master)](https://travis-ci.com/harmeet27/portfolio)
 
 ## Available Scripts
 
