@@ -19,3 +19,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
+
+## License
+
+[MIT License](https://github.com/harmeet27/portfolio/blob/master/LICENSE)
