@@ -20,15 +20,18 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Checkout 🛎️
+      uses: actions/checkout@v2.3.1
       with:
-        node-version: ${{ matrix.node-version }}
-    - run: git config --global user.email harmeetkaur2793@gmail.com
-    - run: git config --global user.name harmeet27
-    - run: git config -l
+        persist-credentials: false
+    - name: Install and Build 🔧
+      run: |
+        npm ci
+        npm run build
+    - name: Coveralls GitHub Action
+      uses: coverallsapp/github-action@v1.1.2
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
     - run: npm ci
     - run: npm run build
+    - run: npm run deploy
