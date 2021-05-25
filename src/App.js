@@ -25,14 +25,14 @@ class App extends React.Component {
   }
 
   componentDidUpdate(prevprops) {
-    if (this.props.location.hash === "") {
+    if (this.props.location?.hash === "") {
       this.props.history.push("#about");
     } else {
-      const tab = this.props.location.hash.split("#");
-      if (prevprops.location.hash !== this.props.location.hash) {
+      const tab = this.props.location?.hash.split("#");
+      if (prevprops.location?.hash !== this.props.location?.hash) {
         this.handleTabClick(tab[1]);
       } else {
-        if (this.state.activeTab !== tab[1]) {
+        if (tab && this.state.activeTab !== tab[1]) {
           this.handleTabClick(tab[1]);
         }
       }
