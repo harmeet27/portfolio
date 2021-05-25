@@ -5,8 +5,7 @@ install:
   - npm install -g codecov
   - npm install --only=dev
 after_success:
-  - npm run coverage
-  - npm run build:prod
+  - npm run build
 deploy:
   provider: pages
   skip-cleanup: true
