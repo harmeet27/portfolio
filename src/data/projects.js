@@ -8,6 +8,8 @@ import selfService from '../assets/self-service.png';
 import killAnalog from '../assets/killAnalog.png';
 import genie from '../assets/genie.mp4';
 import voting from '../assets/voting.mp4';
+import genieIcon from '../assets/genie.png';
+import votingIcon from '../assets/voting.png';
 
 export const projects = [
   {
@@ -63,13 +65,15 @@ export const projects = [
     "description": "A virtual assistant for the not so tech savvy people, it helps to get guided walkthrough of a website based on an individual’s query.",
     "technology": ["AWS Lex chatbot", "Angular JS", "Node JS"],
     "isHobby": true,
-    "video": genie
+    "video": genie,
+    "icon": genieIcon
   },
   {
     "title": "Electoral Voting Application",
     "description": "Based on Ethereum blockchain an application to vote for different candidates.",
     "technology": ["Ganache", "Ethereum Test Network", "Truffle", "Web3.js", "React JS"],
     "isHobby": true,
-    "video": voting
+    "video": voting,
+    "icon": votingIcon
   }
 ];

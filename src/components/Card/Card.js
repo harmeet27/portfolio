@@ -7,17 +7,30 @@ const Card = (props) => {
   const {
     data: { description, title, technology, icon, video },
     hasDescription,
+    showTooltip,
+    isThumbNail,
+    onClick,
   } = props;
+  let renderIcon = icon && !video ? true : false;
+  let renderVideo = video ? true : false;
+  if (isThumbNail && video) {
+    renderIcon = true;
+    renderVideo = false;
+  }
   return (
-    <div className={`card ${props.className}`}>
-      {icon && (
+    <div
+      className={`card ${props.className}`}
+      onClick={onClick ? () => onClick(props.data) : () => {}}
+      title={showTooltip ? title : undefined}
+    >
+      {renderIcon && (
         <img
           src={icon}
           alt={title}
           className={hasDescription ? "img" : "full-img"}
         />
       )}
-      {video && (
+      {renderVideo && (
         <ReactPlayer
           className="player"
           width="100%"
@@ -26,6 +39,7 @@ const Card = (props) => {
           url={video}
         />
       )}
+      {isThumbNail && <p>{title}</p>}
       {hasDescription && (
         <div>
           <h1>{title}</h1>
