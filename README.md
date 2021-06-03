@@ -1,8 +1,9 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/harmeet27/portfolio/badge)](https://www.codefactor.io/repository/github/harmeet27/portfolio)
+[![Build Status](https://travis-ci.com/harmeet27/portfolio.svg?branch=master)](https://travis-ci.com/harmeet27/portfolio)
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory,you can run:
 
 ### `npm run start`
 
@@ -19,3 +20,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
+
+## License
+
+[MIT License](https://github.com/harmeet27/portfolio/blob/master/LICENSE)

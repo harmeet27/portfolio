@@ -5,13 +5,12 @@ install:
   - npm install -g codecov
   - npm install --only=dev
 after_success:
-  - npm run coverage
-  - npm run build:prod
+  - npm run build
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  local_dir: dist/
+  local_dir: build/
   keep-history: true
   on:
     branch: master
