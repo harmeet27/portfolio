@@ -7,13 +7,15 @@ import Contact from "../Contact/Contact";
 import { projects } from "../../data/projects.js";
 
 class Projects extends React.PureComponent {
-  state = {
-    projectDetails: false,
-    projectContent: {},
-  };
-
+  constructor(props) {
+    super(props);
+    this.overlayRef = React.createRef();
+    this.state = {
+      projectDetails: false,
+      projectContent: {},
+    };
+  }
   openDialog = (proj) => {
-    console.log(proj, "click");
     document.getElementsByTagName("body")[0].classList.add("overflow-hidden");
     this.setState({
       projectDetails: true,
@@ -21,7 +23,8 @@ class Projects extends React.PureComponent {
     });
   };
 
-  closeDialog = () => {
+  closeDialog = (e) => {
+    e.stopPropagation();
     document
       .getElementsByTagName("body")[0]
       .classList.remove("overflow-hidden");
@@ -29,6 +32,15 @@ class Projects extends React.PureComponent {
       projectDetails: false,
       projectContent: {},
     });
+  };
+
+  handleOutsideClick = (event) => {
+    if (
+      this.overlayRef &&
+      this.overlayRef.current.className === event.target.className
+    ) {
+      this.closeDialog(event);
+    }
   };
 
   render() {
@@ -53,18 +65,22 @@ class Projects extends React.PureComponent {
         </div>
         {this.state.projectDetails ? (
           <div className="projectDetails">
-            <div className="projectModalContainer">
-            <div className="projectModalContent">
-              <span className="close" onClick={this.closeDialog}>
-                &times;
-              </span>
-              <Card
-                data={this.state.projectContent}
-                key={this.state.projectContent.title}
-                className="projectTech"
-                hasDescription
-              />
-            </div>
+            <div
+              className="projectModalContainer"
+              ref={this.overlayRef}
+              onClick={this.handleOutsideClick}
+            >
+              <div className="projectModalContent">
+                <span className="close" onClick={this.closeDialog}>
+                  &times;
+                </span>
+                <Card
+                  data={this.state.projectContent}
+                  key={this.state.projectContent.title}
+                  className="projectTech"
+                  hasDescription
+                />
+              </div>
             </div>
           </div>
         ) : (
