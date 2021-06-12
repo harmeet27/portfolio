@@ -69,8 +69,7 @@
     "predeploy": "npm run build && echo \"kaurharmeet.com\" > build/CNAME",
     "deploy": "gh-pages -d build",
     "serve": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js",
+    "build": "node scripts/build.js && cp build/index.html build/404.html",
     "start": "serve -s build"
   },
   "eslintConfig": {

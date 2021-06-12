@@ -8,7 +8,7 @@ import * as serviceWorker from "./serviceWorker";
 const AppWithRouter = withRouter((props) => <App {...props} />);
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <AppWithRouter />
     </Router>
   </React.StrictMode>,

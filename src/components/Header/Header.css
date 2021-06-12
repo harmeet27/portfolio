@@ -1,14 +1,11 @@
 .header {
-  text-align: center;
   color: #fff;
-  background: #bd6964;
-  display: block;
-  padding-top: 90px;
-  padding-bottom: 50px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  background: #bf1616c7 url("../../assets/home.jpg") no-repeat;
+  z-index: 5;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
 }
 
 .profile {
@@ -18,11 +15,15 @@
 
 .tagLine {
   filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+  font-weight: bold;
+  color: rgb(255 255 255 / 50%);
+  text-shadow: 2px 0 0 rgb(0 0 0);
+  
 }
 
 .cv {
   padding: 15px;
-  margin-bottom: 25px;
+  margin: 20px 0;
   background: #0e143c;
   border-radius: 50px;
   display: inline-block;
@@ -33,37 +34,51 @@
 }
 
 .cv:hover {
-  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  text-shadow: 0 0 6px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0 5px 40px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.4s ease 0s;
 }
 
 .speaker {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  align-self: center;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+  margin-top: 10%;
+}
+
+.speakerMobile{
   height: 28px;
   width: 28px;
   cursor: pointer;
+  align-self: center;
   filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+  margin-top: 65%;
 }
 
 .minimal {
   border: none;
-  background-color: #bd6964;
+  display: contents;
 }
 
 .minimal:focus {
   outline: none;
   border: none;
-  background-color: #bd6964;
 }
 
 .icon {
   filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
 
+.iconMobile {
+  width: 45px;
+}
+
 .nameContainer {
   display: flex;
-  justify-content: center;
+  padding: 5px;
 }
 
 .name {
@@ -71,9 +86,41 @@
   white-space: nowrap;
   animation: animated-text 3s steps(29, end) 0s 1 normal both;
   overflow: hidden;
+  margin: auto 0;
+  margin-top: 10%;
+  font-size: 100px;
+  text-shadow: 7px 0 0 rgb(0 0 0);
+
 }
 
-@keyframes animated-text{
-  from{width: 0;}
-  to{width: 300px;}
+.nameMobile {
+  width: 320px;
+  white-space: nowrap;
+  animation: animated-text 3s steps(29, end) 0s 1 normal both;
+  overflow: hidden;
+  margin: auto 0;
+  margin-top: 65%;
+  font-size: 35px;
+  text-shadow: 7px 0 0 rgb(0 0 0);
+
+}
+
+.description {
+  text-align: left;
+  margin-left: 35px;
+}
+
+.descriptionMobile {
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+}
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 910px;
+  }
 }

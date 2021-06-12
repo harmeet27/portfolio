@@ -7,6 +7,7 @@ const Card = (props) => {
   const {
     data: { description, title, technology, icon, video },
     hasDescription,
+    showTitle = true,
     showTooltip,
     isThumbNail,
     onClick,
@@ -19,7 +20,7 @@ const Card = (props) => {
   }
   return (
     <div
-      className={`card ${props.className}`}
+      className={`${props.className} card`}
       onClick={onClick ? () => onClick(props.data) : () => {}}
       title={showTooltip ? title : undefined}
     >
@@ -42,7 +43,7 @@ const Card = (props) => {
       {isThumbNail && <p>{title}</p>}
       {hasDescription && (
         <div>
-          <h1>{title}</h1>
+          {showTitle ? <h1 className="title">{title}</h1> : false}
           {description}
           <div className="technologies">
             <div className="label">Technologies Used:</div>

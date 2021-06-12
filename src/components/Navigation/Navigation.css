@@ -1,91 +1,104 @@
-.navBar {
-  background-color: #0e143c;
-  top: 0;
-  position: fixed;
-  right: 0;
-  left: 0;
-  min-height: 57px;
-  margin-bottom: 10px;
-  box-shadow: 5px 6px 12px -4px #000;
-  display: inline-block;
-  text-align: left;
-  z-index: 5;
+.background-image {
+  width: 100%;
+  color: #fff;
+  position: relative;
+  background-color: #3d8e98;
+  background-image: url("../../assets/beach.jpg");
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-position-x: right;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.dropdown {
-  position: relative;
-  margin-top: 40px;
-  background-color: #0e143c;
-  display: flex;
-  flex-direction: column;
+.menuList {
+  background-color: rgb(14 20 60 / 30%);
+  position: absolute;
+  width: 85%;
+  height: 73%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(2px 3px 5px black);
+}
+
+.ulList {
+  list-style-type: none;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-right: 38px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: x-large;
+  text-align: left;
+  margin: 0;
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 .link {
   text-decoration: none;
-  font-size: 20px;
-  padding: 15px;
-  font-weight: 500;
+}
+
+.entry {
   color: #fff;
-  letter-spacing: 1px;
-  margin-left: 15px;
-}
-
-.link:hover,
-.link:active,
-.link:focus {
-  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-  transition: all 0.4s ease 0s;
-}
-
-.logo {
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-left: 15px;
-}
-
-.navBarRight {
-  float: right;
-}
-
-.desktopMenu {
-  padding-top: 20px;
-}
-
-.tab {
-  margin: 30px;
+  font-size: 30px;
+  margin-left: 30px;
   text-decoration: none;
-  font-size: 25px;
-  font-weight: 600;
-  color: #fff;
-  letter-spacing: 1px;
-  padding: 3px;
+  line-height: 60px;
 }
 
-.menu {
-  position: relative;
-  margin: 10px;
-  padding: 7px 10px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  background-color: #fff;
-  border-color: #fff;
+.background-image .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 10px;
+  z-index: 8;
 }
 
-.iconBar {
+.background-image .close:hover,
+.background-image .close:focus {
+  color: #3d8e98;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact {
+  text-align: center;
+  width: 85%;
+  height: 35%;
+  left: 48%;
+  transform: translate(-50%, 0);
+  filter: drop-shadow(2px 3px 5px black);
   display: block;
-  width: 22px;
-  height: 2px;
-  margin-bottom: 4px;
-  margin-top: 4px;
-  border-radius: 1px;
-  background-color: #0e143c;
+  position: absolute;
+  /* background: url('../../assets/talkToMe.png'); */
+  z-index: 5;
 }
 
-.active {
-  /* border-bottom: 5px solid #fff; */
-  text-shadow: 0px 0px 6px #aeb1c7;
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-  transition: all 0.4s ease 0s;
+.icon {
+  width: 50px;
+}
+
+.stackOverflow {
+  margin-bottom: 6px;
+}
+
+.menuItem {
+  background-color: rgb(102 42 148 / 18%);
+  border-radius: 35px;
+  width: 100%;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.menuItemPink {
+  border-radius: 35px;
+  width: 100%;
+  background-color: rgb(253 68 239 / 20%);
+  margin-bottom: 25px;
+  cursor: pointer;
 }

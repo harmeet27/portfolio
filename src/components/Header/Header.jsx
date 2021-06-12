@@ -1,6 +1,5 @@
 import React from "react";
 import "./Header.css";
-import profile from "../../assets/profile.png";
 import programmer from "../../assets/programmer.svg";
 import tech from "../../assets/tech.svg";
 import writer from "../../assets/writer.svg";
@@ -9,16 +8,24 @@ import backpack from "../../assets/backpack.svg";
 import speaker from "../../assets/speakerOn.gif";
 import speakerOff from "../../assets/speakerOff.png";
 import audio from "../../assets/MyName.mp3";
+import SideNav from "../SideNav/SideNav";
 import cv from "../../assets/Harmeet_Kaur_2021.pdf";
 
 class Header extends React.PureComponent {
-  state = {
-    isPlaying: false,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      isPlaying: false,
+      isDesktop: false,
+    };
+    this.updatePredicate = this.updatePredicate.bind(this);
+  }
 
   audio = new Audio(audio);
 
   componentDidMount() {
+    this.updatePredicate();
+    window.addEventListener("resize", this.updatePredicate);
     this.audio.addEventListener("ended", () =>
       this.setState({ isPlaying: false })
     );
@@ -30,6 +37,10 @@ class Header extends React.PureComponent {
     );
   }
 
+  updatePredicate() {
+    this.setState({ isDesktop: window.innerWidth > 750 });
+  }
+
   togglePlay = () => {
     this.setState({ isPlaying: !this.state.isPlaying }, () => {
       this.state.isPlaying ? this.audio.play() : this.audio.pause();
@@ -39,19 +50,27 @@ class Header extends React.PureComponent {
   render() {
     return (
       <div className="header" ref={this.props.aboutRef}>
-        <img src={profile} alt="profile" className="profile" />
         <span className="nameContainer">
-          <h1 className="name"> HI!, I am Harmeet.</h1>
+          <h1 className={this.state.isDesktop ? "name" : "nameMobile" }> HI!, I am Harmeet.</h1>
           {
             <button className="minimal" onClick={this.togglePlay}>
               {!this.state.isPlaying ? (
-                <img className="speaker" alt="speaker off" src={speakerOff} />
+                <img className={this.state.isDesktop ? "speaker":"speakerMobile"} alt="speaker off" src={speakerOff} />
               ) : (
-                <img className="speaker" alt="speaker" src={speaker} />
+                <img className={this.state.isDesktop ? "speaker":"speakerMobile"} alt="speaker" src={speaker} />
               )}
             </button>
           }
         </span>
+        <div className={this.state.isDesktop ? "description" : "descriptionMobile"}>
+        <span className="tagLine" ref={this.props.projectsRef}>
+          <img className={this.state.isDesktop ? "icon" : "iconMobile"} alt="web" src={programmer} /> Web Developer |
+          <img className={this.state.isDesktop ? "icon" : "iconMobile"} alt="tech" src={tech} /> Technophile |
+          <img className={this.state.isDesktop ? "icon" : "iconMobile"} alt="tech" src={writer} /> Writer |
+          <img className={this.state.isDesktop ? "icon" : "iconMobile"} alt="tech" src={foodie} /> Foodie |
+          <img className={this.state.isDesktop ? "icon" : "iconMobile"} alt="tech" src={backpack} /> HodoPhile
+        </span>
+        <br/>
         <a
           href={cv}
           target="_blank"
@@ -60,14 +79,8 @@ class Header extends React.PureComponent {
         >
           <button className="cv">Download CV</button>
         </a>
-        <br />
-        <span className="tagLine" ref={this.props.projectsRef}>
-          <img className="icon" alt="web" src={programmer} /> Web Developer |
-          <img className="icon" alt="tech" src={tech} /> Technophile |
-          <img className="icon" alt="tech" src={writer} /> Writer |
-          <img className="icon" alt="tech" src={foodie} /> Foodie |
-          <img className="icon" alt="tech" src={backpack} /> HodoPhile
-        </span>
+        </div>
+        <SideNav history={this.props.history} />
       </div>
     );
   }
