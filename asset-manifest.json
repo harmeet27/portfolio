@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.9ddfec03.chunk.css",
-    "main.js": "/static/js/main.326a804f.chunk.js",
-    "main.js.map": "/static/js/main.326a804f.chunk.js.map",
+    "main.css": "/static/css/main.c427e11e.chunk.css",
+    "main.js": "/static/js/main.2e2d204d.chunk.js",
+    "main.js.map": "/static/js/main.2e2d204d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6b3488d1.js",
     "runtime-main.js.map": "/static/js/runtime-main.6b3488d1.js.map",
     "static/js/2.4fe3dbd6.chunk.js": "/static/js/2.4fe3dbd6.chunk.js",
     "static/js/2.4fe3dbd6.chunk.js.map": "/static/js/2.4fe3dbd6.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b3a45ff247f559f7616853c53e5f4ae1.js": "/precache-manifest.b3a45ff247f559f7616853c53e5f4ae1.js",
+    "precache-manifest.f13750b5dac9df2257f6ecb74ad3c90e.js": "/precache-manifest.f13750b5dac9df2257f6ecb74ad3c90e.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.9ddfec03.chunk.css.map": "/static/css/main.9ddfec03.chunk.css.map",
+    "static/css/main.c427e11e.chunk.css.map": "/static/css/main.c427e11e.chunk.css.map",
     "static/js/2.4fe3dbd6.chunk.js.LICENSE.txt": "/static/js/2.4fe3dbd6.chunk.js.LICENSE.txt",
     "static/media/Harmeet_Kaur_2021.pdf": "/static/media/Harmeet_Kaur_2021.55065e6f.pdf",
     "static/media/MyName.mp3": "/static/media/MyName.7a1f0968.mp3",
@@ -51,7 +51,7 @@
   "entrypoints": [
     "static/js/runtime-main.6b3488d1.js",
     "static/js/2.4fe3dbd6.chunk.js",
-    "static/css/main.9ddfec03.chunk.css",
-    "static/js/main.326a804f.chunk.js"
+    "static/css/main.c427e11e.chunk.css",
+    "static/js/main.2e2d204d.chunk.js"
   ]
 }
