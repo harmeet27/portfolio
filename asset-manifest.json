@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.4594216f.chunk.css",
-    "main.js": "/static/js/main.ede6849a.chunk.js",
-    "main.js.map": "/static/js/main.ede6849a.chunk.js.map",
+    "main.css": "/static/css/main.e5161b30.chunk.css",
+    "main.js": "/static/js/main.b46bce84.chunk.js",
+    "main.js.map": "/static/js/main.b46bce84.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6b3488d1.js",
     "runtime-main.js.map": "/static/js/runtime-main.6b3488d1.js.map",
-    "static/js/2.4fe3dbd6.chunk.js": "/static/js/2.4fe3dbd6.chunk.js",
-    "static/js/2.4fe3dbd6.chunk.js.map": "/static/js/2.4fe3dbd6.chunk.js.map",
+    "static/js/2.c0a4302f.chunk.js": "/static/js/2.c0a4302f.chunk.js",
+    "static/js/2.c0a4302f.chunk.js.map": "/static/js/2.c0a4302f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.efe770a6da07a4894a8cb91c49aa58da.js": "/precache-manifest.efe770a6da07a4894a8cb91c49aa58da.js",
+    "precache-manifest.d6af1e6f53a7cf713022a49a12dc0571.js": "/precache-manifest.d6af1e6f53a7cf713022a49a12dc0571.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.4594216f.chunk.css.map": "/static/css/main.4594216f.chunk.css.map",
-    "static/js/2.4fe3dbd6.chunk.js.LICENSE.txt": "/static/js/2.4fe3dbd6.chunk.js.LICENSE.txt",
+    "static/css/main.e5161b30.chunk.css.map": "/static/css/main.e5161b30.chunk.css.map",
+    "static/js/2.c0a4302f.chunk.js.LICENSE.txt": "/static/js/2.c0a4302f.chunk.js.LICENSE.txt",
     "static/media/Harmeet_Kaur_2021.pdf": "/static/media/Harmeet_Kaur_2021.55065e6f.pdf",
     "static/media/MyName.mp3": "/static/media/MyName.7a1f0968.mp3",
     "static/media/alc.png": "/static/media/alc.e91ad2fa.png",
@@ -19,6 +19,7 @@
     "static/media/Navigation.css": "/static/media/beach.fd6134ab.jpg",
     "static/media/billing.png": "/static/media/billing.1b7a38fb.png",
     "static/media/blogger.svg": "/static/media/blogger.e34361da.svg",
+    "static/media/dehaadiDetails.png": "/static/media/dehaadiDetails.288bc444.png",
     "static/media/foodie.svg": "/static/media/foodie.2e5c6b19.svg",
     "static/media/genie.mp4": "/static/media/genie.c4a20386.mp4",
     "static/media/genie.png": "/static/media/genie.e594f19e.png",
@@ -50,8 +51,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.6b3488d1.js",
-    "static/js/2.4fe3dbd6.chunk.js",
-    "static/css/main.4594216f.chunk.css",
-    "static/js/main.ede6849a.chunk.js"
+    "static/js/2.c0a4302f.chunk.js",
+    "static/css/main.e5161b30.chunk.css",
+    "static/js/main.b46bce84.chunk.js"
   ]
 }
