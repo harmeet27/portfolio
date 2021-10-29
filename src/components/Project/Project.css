@@ -17,6 +17,26 @@
   margin-top: 10px;
 }
 
+.project img#pay-as-you-go{
+  width: 20% !important;
+  height: 65% !important;
+  margin-top: 5%;
+}
+
+@media only screen and (max-width: 480px) {
+  .project img{
+    width: 100% !important;
+    height: 35% !important;
+    margin-top: 5%;
+  }
+
+  .project img#pay-as-you-go{
+    width: 95% !important;
+    height: 50% !important;
+    margin-top: 5%;
+  }
+}
+
 .project div{
     background-color: rgb(0 0 0 / 50%);
 }
@@ -31,4 +51,5 @@
 
 .project div .technologies .label{
     background: none;
+    margin-top: 5px;
 }

@@ -6,6 +6,7 @@ import billing from '../assets/billing.png';
 import jobserver from '../assets/jobserver.png';
 import selfService from '../assets/self-service.png';
 import killAnalog from '../assets/killAnalog.png';
+import dehaadi from '../assets/dehaadiDetails.png';
 import genie from '../assets/genie.mp4';
 import voting from '../assets/voting.mp4';
 import genieIcon from '../assets/genie.png';
@@ -67,6 +68,14 @@ export const projects = [
     "technology": ["Java", "Spring", "REST", "Angular JS", "iframes"],
     "icon": killAnalog,
     "id": "kill-analog"
+  },
+  {
+    "title": "Pay As You Go - Dehaadi",
+    "description": "Onboard Daily Subscriptions, while pay and maintain records on the same platform",
+    "technology": ["Kotlin", "Node JS", "Mongo DB"],
+    "isHobby": true,
+    "icon": dehaadi,
+    "id": "pay-as-you-go"
   },
   {
     "title": "Website Walkthrough",

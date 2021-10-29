@@ -5,7 +5,7 @@ import "./Card.css";
 
 const Card = (props) => {
   const {
-    data: { description, title, technology, icon, video },
+    data: { description, title, technology, icon, video, id },
     hasDescription,
     showTitle = true,
     showTooltip,
@@ -29,13 +29,12 @@ const Card = (props) => {
           src={icon}
           alt={title}
           className={hasDescription ? "img" : "full-img"}
+          id={id}
         />
       )}
       {renderVideo && (
         <ReactPlayer
           className="player"
-          width="100%"
-          height="100%"
           controls
           url={video}
         />
