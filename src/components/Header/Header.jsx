@@ -9,7 +9,7 @@ import speaker from "../../assets/speakerOn.gif";
 import speakerOff from "../../assets/speakerOff.png";
 import audio from "../../assets/MyName.mp3";
 import SideNav from "../SideNav/SideNav";
-import cv from "../../assets/Harmeet_Kaur_2021.pdf";
+import cv from "../../assets/Harmeet_Kaur_2022.pdf";
 
 class Header extends React.PureComponent {
   constructor(props) {
