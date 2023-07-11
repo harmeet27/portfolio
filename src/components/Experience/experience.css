@@ -1,0 +1,29 @@
+.logo img{
+  width: 20%;
+  height: 100px;
+  margin: 5px;
+}
+
+.timeline {
+  color: white;
+  text-align: left;
+}
+
+.timeline-event {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 20px; */
+  margin: 10px;
+}
+
+.timeline-year {
+  margin: 0 15px 0 15px;
+}
+
+.company{
+  width: 50%
+}
+
+.timeline-description {
+  color: white;
+}

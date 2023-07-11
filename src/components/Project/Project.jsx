@@ -1,7 +1,6 @@
 import React from "react";
 import { projects } from "../../data/projects.js";
 import Card from "../Card/Card.js";
-import SideNav from "../SideNav/SideNav.jsx";
 import './Project.css'
 
 class Project extends React.PureComponent {
@@ -22,9 +21,9 @@ class Project extends React.PureComponent {
           data={projectObject}
           key={projectObject.title}
           hasDescription
+          subTextClassName={"subTextClassName"}
           className="project"
         />
-        <SideNav history={this.props.history} />
       </div>
     );
   }

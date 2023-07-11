@@ -11,9 +11,11 @@ const Card = (props) => {
     showTooltip,
     isThumbNail,
     onClick,
+    subTextClassName,
   } = props;
   let renderIcon = icon && !video ? true : false;
   let renderVideo = video ? true : false;
+  debugger;
   if (isThumbNail && video) {
     renderIcon = true;
     renderVideo = false;
@@ -28,7 +30,7 @@ const Card = (props) => {
         <img
           src={icon}
           alt={title}
-          className={hasDescription ? "img" : "full-img"}
+          className={hasDescription ? "full-img" : "img"}
           id={id}
         />
       )}
@@ -39,10 +41,10 @@ const Card = (props) => {
           url={video}
         />
       )}
-      {isThumbNail && <p>{title}</p>}
+      {isThumbNail && <div className={subTextClassName}>{title}</div>}
       {hasDescription && (
-        <div>
-          {showTitle ? <h1 className="title">{title}</h1> : false}
+        <div className={subTextClassName}>
+          {showTitle ? <div className="title">{title}</div> : false}
           {description}
           <div className="technologies">
             <div className="label">Technologies Used:</div>

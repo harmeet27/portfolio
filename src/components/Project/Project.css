@@ -1,39 +1,34 @@
 .projectBackGround{
+  margin-top: 90px;
 }
 
 .project {
   margin: 0;
-  background-color: #0e1a6b;
-  background-image: url('../../assets/item.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: overlay;
-  height:100vh;
-  overflow: hidden;
+  background-color: #000;
 }
 
 .project img{
-  width: 55%;
-  margin-top: 10px;
+  width: 50%;
+  height: 50%;
 }
 
 .project img#pay-as-you-go{
   width: 20% !important;
-  height: 65% !important;
-  margin-top: 5%;
+  height: 60vh !important;
+  /* margin-top: 5%; */
 }
 
 @media only screen and (max-width: 480px) {
   .project img{
-    width: 100% !important;
-    height: 35% !important;
+    width: 90% !important;
+    height: 80% !important;
     margin-top: 5%;
   }
 
   .project img#pay-as-you-go{
     width: 95% !important;
-    height: 50% !important;
-    margin-top: 5%;
+    height: 60vh !important;
+    /* margin-top: 5%; */
   }
 }
 
@@ -51,5 +46,8 @@
 
 .project div .technologies .label{
     background: none;
-    margin-top: 5px;
+}
+
+.subTextClassName{
+   margin: 20px;
 }
