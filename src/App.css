@@ -1,5 +1,219 @@
+:root {
+  --instagram-bg: #000000;
+  --instagram-text: #ffffff;
+  --instagram-primary: #405DE6;
+  --instagram-gradient-1: #5851DB;
+  --instagram-gradient-2: #833AB4;
+  --instagram-gradient-3: #C13584;
+  --instagram-gradient-4: #E1306C;
+  --instagram-gradient-5: #FD1D1D;
+  --instagram-gradient-6: #F56040;
+  --instagram-gradient-7: #F77737;
+  --instagram-gradient-8: #FCAF45;
+  --instagram-gradient-9: #FFDC80;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--instagram-bg);
+  color: var(--instagram-text);
+  overflow-x: hidden;
+}
+
 .App {
   text-align: center;
-  overflow-x: hidden;
-  color: #333333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Instagram gradient button */
+.instagram-button {
+  background: linear-gradient(45deg, 
+    var(--instagram-gradient-1),
+    var(--instagram-gradient-3),
+    var(--instagram-gradient-5),
+    var(--instagram-gradient-7),
+    var(--instagram-gradient-9)
+  );
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.instagram-button:hover {
+  transform: scale(1.05);
+}
+
+/* Instagram reel container */
+.reel-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.reel-item {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  scroll-snap-align: start;
+}
+
+.reels-scroll {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none; /* Firefox */
+}
+
+.reels-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Instagram story circle */
+.story-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, 
+    var(--instagram-gradient-1),
+    var(--instagram-gradient-3),
+    var(--instagram-gradient-5),
+    var(--instagram-gradient-7),
+    var(--instagram-gradient-9)
+  );
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-circle img {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 2px solid black;
+  object-fit: cover;
+}
+
+/* Instagram card */
+.instagram-card {
+  background-color: #121212;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.instagram-card-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.instagram-card-header .avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.instagram-card-header .username {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.instagram-card-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.instagram-card-actions {
+  display: flex;
+  padding: 10px;
+}
+
+.instagram-card-actions button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.instagram-card-caption {
+  padding: 0 10px 10px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Animation for like button */
+@keyframes likeAnimation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.like-animation {
+  animation: likeAnimation 0.3s ease;
+}
+
+/* Reel overlay elements */
+.reel-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  z-index: 2;
+}
+
+.reel-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.reel-description {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.reel-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reel-action-left {
+  display: flex;
+}
+
+.reel-action-button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .reel-title {
+    font-size: 16px;
+  }
+  
+  .reel-description {
+    font-size: 12px;
+  }
 }

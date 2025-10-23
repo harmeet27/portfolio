@@ -1,93 +1,106 @@
 .projects {
-  display: block;
   width: 100%;
-  z-index: 9;
-  margin: auto;
-  overflow: hidden;
-  /* background: url("../../assets/project.jpg") no-repeat; */
-  background-color: #000;
-  /* height: 80vh; */
-  /* overflow: auto; */
-  box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 20%);
-  /* background-size: cover;
-  background-position: center;
-  background-blend-mode: darken; */
+  background-color: #141414;
+  min-height: 100vh;
+  padding: 70px 0 40px;
 }
 
-.projectRow {
+.netflix-section {
+  padding: 0 4%;
+  margin-bottom: 40px;
 }
 
-.projects .title {
-  font-weight: bolder;
-  font-size: 60px;
-  color: #fff;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 25px;
-  text-shadow: 2px 0 0 rgb(0 0 0);
+.section-title {
+  font-size: 1.4vw;
+  color: #e5e5e5;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
-.projectList {
+.netflix-row {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-flow: row wrap;
-  align-content: flex-end;
-  margin-top: 90px;
-  /* background-color: yellow; */
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 30px;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
-.projects .thumbnail {
-  width: 395px;
+.netflix-row::-webkit-scrollbar {
+  display: none;
+}
+
+.netflix-card {
+  min-width: 300px;
+  height: 169px;
+  margin-right: 10px;
+  position: relative;
+  transition: transform 0.3s ease;
+  border-radius: 4px;
+  overflow: hidden;
   cursor: pointer;
-  background-color: rgb(95 153 255 / 50%);
-  /* padding:10px; */
-  color: #000;
-  font-weight: bold;
-  height: 100%;
-  margin: 30px;
-  height: 400px;
-  margin: 20px;
 }
 
-.thumbnail:hover {
-  transform: scale(1.1);
-  z-index: 8;
-  /* text-shadow: 0 0 6px rgba(255, 255, 255, 1); */
-  -webkit-box-shadow: 0 5px 40px -10px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0 5px 40px -10px rgba(0, 0, 0, 0.57);
-  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+.netflix-card:hover {
+  transform: scale(1.08);
+  z-index: 2;
 }
 
-.projects .thumbnail img#pay-as-you-go {
-  width: 25%;
-}
-
-.overflow-hidden {
-  overflow: hidden;
-}
-
-.thumbnail img {
-  /* margin-top: 5px; */
-  /* padding: 10px; */
-  /* width: 120px; */
-  /* height: 50px; */
-  width: 90%;
-  height: 80%;
-  /* display: inline-block; */
-  margin: 15px 0 5px 0;
-}
-
-.subText {
-  background-color: #0e143c4d;
-  height: 56px;
-  display: flex;
+.netflix-card img {
   width: 100%;
-  justify-content: center;
-  align-items: center;
-  color: #2468ef;
-  font-family: Arial, Helvetica, sans-serif
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.netflix-card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0));
+  padding: 10px;
+  color: white;
+  text-align: left;
+}
+
+.netflix-card-title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.netflix-card-tech {
+  font-size: 0.8rem;
+  color: #a3a3a3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.featured-row {
+  margin-top: 20px;
+}
+
+.featured-card {
+  min-width: 400px;
+  height: 225px;
+}
+
+@media (max-width: 768px) {
+  .netflix-card {
+    min-width: 200px;
+    height: 113px;
+  }
+  
+  .featured-card {
+    min-width: 280px;
+    height: 158px;
+  }
+  
+  .section-title {
+    font-size: 18px;
+  }
 }
