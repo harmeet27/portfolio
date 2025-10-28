@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a2992c64.css",
-    "main.js": "/static/js/main.75695773.js",
+    "main.js": "/static/js/main.7b8c741c.js",
     "static/css/64.c82cee27.chunk.css": "/static/css/64.c82cee27.chunk.css",
     "static/js/64.66e9ee4b.chunk.js": "/static/js/64.66e9ee4b.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
@@ -21,7 +21,7 @@
     "static/media/sparkola.png": "/static/media/sparkola.7531a51e8cd843a044e2.png",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/genie.png": "/static/media/genie.7d7acaea9d9ff72bedce.png",
-    "static/media/2025HK.pdf": "/static/media/2025HK.fd6259850ba44ddfda1d.pdf",
+    "static/media/2025HKResume.pdf": "/static/media/2025HKResume.fd6259850ba44ddfda1d.pdf",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/dehaadiDetails.png": "/static/media/dehaadiDetails.5463c93ed3ffd1a6a307.png",
     "static/media/dbs.jpg": "/static/media/dbs.c65f7abaf8954a4618f8.jpg",
@@ -37,7 +37,7 @@
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.a2992c64.css.map": "/static/css/main.a2992c64.css.map",
-    "main.75695773.js.map": "/static/js/main.75695773.js.map",
+    "main.7b8c741c.js.map": "/static/js/main.7b8c741c.js.map",
     "64.c82cee27.chunk.css.map": "/static/css/64.c82cee27.chunk.css.map",
     "64.66e9ee4b.chunk.js.map": "/static/js/64.66e9ee4b.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
@@ -45,6 +45,6 @@
   },
   "entrypoints": [
     "static/css/main.a2992c64.css",
-    "static/js/main.75695773.js"
+    "static/js/main.7b8c741c.js"
   ]
 }
