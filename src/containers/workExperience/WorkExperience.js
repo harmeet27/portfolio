@@ -1,22 +1,23 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import "./WorkExperience.scss";
 import ExperienceCard from "../../components/experienceCard/ExperienceCard";
-import {workExperiences} from "../../portfolio";
-import {Fade} from "react-reveal";
+import { workExperiences } from "../../portfolio";
+import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function WorkExperience() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   if (workExperiences.display) {
     return (
       <div id="experience">
-        <Fade bottom duration={1000} distance="20px">
-          <div className="experience-container" id="workExperience">
-            <div>
-              <h1 className="experience-heading">Experiences</h1>
-              <div className="experience-cards-div">
-                {workExperiences.experience.map((card, i) => {
-                  return (
+
+        <div className="experience-container" id="workExperience">
+          <div>
+            <h1 className="experience-heading">Experiences</h1>
+            <div className="experience-cards-div">
+              {workExperiences.experience.map((card, i) => {
+                return (
+                  <Fade bottom duration={1000} distance="20px">
                     <ExperienceCard
                       key={i}
                       isDark={isDark}
@@ -29,12 +30,12 @@ export default function WorkExperience() {
                         descBullets: card.descBullets
                       }}
                     />
-                  );
-                })}
-              </div>
+                  </Fade>
+                );
+              })}
             </div>
           </div>
-        </Fade>
+        </div>
       </div>
     );
   }
