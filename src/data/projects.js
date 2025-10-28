@@ -68,7 +68,7 @@ export const projects = [
     "description": "A virtual assistant for the not so tech savvy people, it helps to get guided walkthrough of a website based on an individual’s query.",
     "technology": ["AWS Lex chatbot", "Angular JS", "Node JS"],
     "isHobby": true,
-    "video": process.env.PUBLIC_URL + '/projects/genie.mp4',
+    "video": process.env.PUBLIC_URL + '/projects/genie_fixed.mp4',
     "icon": process.env.PUBLIC_URL + '/projects/genie.png',
     "id": "website-walkthrough"
   },
@@ -77,7 +77,7 @@ export const projects = [
     "description": "Based on Ethereum blockchain an application to vote for different candidates.",
     "technology": ["Ganache", "Ethereum Test Network", "Truffle", "Web3.js", "React JS"],
     "isHobby": true,
-    "video": process.env.PUBLIC_URL + '/projects/voting.mp4',
+    "video": process.env.PUBLIC_URL + '/projects/voting_fixed.mp4',
     "icon": process.env.PUBLIC_URL + '/projects/voting.png',
     "id": "electoral-voting-application"
   }
