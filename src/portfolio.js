@@ -83,30 +83,6 @@ const skillsSection = {
 };
 
 // Education Section
-const educationInfo = {
-  display: false, // Set false to hide this section, defaults to true
-  schools: [
-    {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
-  ]
-};
 
 // Your top 3 proficient stacks/tech experience
 const techStack = {
@@ -126,21 +102,21 @@ const workExperiences = {
     {
       role: "Engineering Lead",
       company: "Zalando",
-      companylogo: require("./assets/companies/zalando.png"),
+      companylogo: process.env.PUBLIC_URL + "/companies/zalando.png",
       date: "May 2022 – Present",
       desc: `Driving scalable frontend initiatives and leading a high-performing team to deliver impactful user experiences on Europe’s leading fashion and lifestyle platform`,
       descBullets: [
         "Promoted twice in 3 years — now leading a team of 6 engineers delivering large-scale frontend initiatives",
         "Drive roadmap execution and collaborate with Product and Design to deliver seamless user experiences",
         "Mentor engineers, run agile ceremonies, and foster a culture of ownership and continuous improvement",
-        "Modernized frontend stack (React, TypeScript, GraphQL) to improve performance and scalability by 40%",
+        "Modernized frontend stack (React, TypeScript, GraphQL to improve performance and scalability by 40%",
         "Balance hands-on coding with strategic planning to ensure timely, high-quality releases"
       ]
     },
     {
       role: "Senior Software Engineer",
       company: "Paytm",
-      companylogo: require("./assets/companies/one97.jpg"),
+      companylogo: process.env.PUBLIC_URL + "/companies/one97.jpg",
       date: "Nov 2020 – May 2022",
       desc: "Delivered high-performance frontend solutions for one of India’s leading digital payment and financial services platforms, enhancing user experience and platform scalability",
       descBullets: [
@@ -154,7 +130,7 @@ const workExperiences = {
     {
       role: "Software Engineer",
       company: "Development Bank of Singapore",
-      companylogo: require("./assets/companies/dbs.jpg"),
+      companylogo: process.env.PUBLIC_URL + "/companies/dbs.jpg",
       date: "Nov 2017 – Nov 2020",
       desc: "Software Engineer at DBS Singapore — transitioned from backend Java development to frontend, delivering user-facing banking solutions and scalable web applications.",
       descBullets: [
@@ -167,7 +143,7 @@ const workExperiences = {
     {
       role: "Software Engineer",
       company: "Infosys",
-      companylogo: require("./assets/companies/infy.jpg"),
+      companylogo: process.env.PUBLIC_URL + "/companies/infy.jpg",
       date: "Sep 2015 – Nov 2017",
       desc: "Joined right after graduation, trained in Python and SAP ABAP, delivering enterprise-grade solutions for production SAP systems.",
       descBullets: [
@@ -194,7 +170,7 @@ const bigProjects = {
   projects: [
     {
       id: "artifact-lifecycle",
-      image: require("./assets/alc.png"),
+      image: process.env.PUBLIC_URL + "/projects/alc.png",
       projectName: "Artifact Lifecycle",
       projectDesc: "Developed a web portal for onboarding and deploying artifacts across multiple environments, featuring batch deployments, real-time status tracking, action history, and intuitive filters for an enhanced user experience.",
       footerLink: [
@@ -204,7 +180,7 @@ const bigProjects = {
     },
     {
       id: "ui-elements",
-      image: require("./assets/ui-elements.png"),
+      image: process.env.PUBLIC_URL + "/projects/ui-elements.png",
       projectName: "UI Elements",
       projectDesc: "Replaced Blueprint JS with a custom UI component library “Elements,” building reusable components like Buttons, Switches, Alerts, Dialogs, Tables, and more to standardize and streamline the frontend.",
       footerLink: [
@@ -213,7 +189,7 @@ const bigProjects = {
     },
     {
       id: "ui-metrics",
-      image: require("./assets/ui-metrics.png"),
+      image: process.env.PUBLIC_URL + "/projects/ui-metrics.png",
       projectName: "UI Metrics",
       projectDesc: "Developed a web application to track user interactions, API and JS errors, and visited URLs, providing analytics dashboards, downloadable reports, and insights to optimize user experience and proactively resolve issues",
       footerLink: [
@@ -222,7 +198,7 @@ const bigProjects = {
     },
     {
       id: "sparkola",
-      image: require("./assets/sparkola.png"),
+      image: process.env.PUBLIC_URL + "/projects/sparkola.png",
       projectName: "Sparkola",
       projectDesc: "Developed a project explorer for Spark jobs with full preview and edit capabilities, supporting project creation/deletion, lineage graphs, dataset selection, downloadable data, and per-job kernel management for build and release",
       footerLink: [
@@ -231,7 +207,7 @@ const bigProjects = {
     },
     {
       id: "jobserver",
-      image: require("./assets/jobserver.png"),
+      image: process.env.PUBLIC_URL + "/projects/jobserver.png",
       projectName: "Jobserver",
       projectDesc: "Built a portal to manage Spark jobs, enabling job execution on YARN, real-time status tracking, log/report access, and actions like aborting, cloning, and passing runtime argument",
       footerLink: [
@@ -240,7 +216,7 @@ const bigProjects = {
     },
     {
       id: "self-service-portal",
-      image: require("./assets/self-service.png"),
+      image: process.env.PUBLIC_URL + "/projects/self-service.png",
       projectName: "Self Service Portal",
       projectDesc: "Developed a centralized portal to create, request, and approve personas and rules at team or organization level, providing visibility into request statuses and streamlining access management",
       footerLink: [
@@ -249,7 +225,7 @@ const bigProjects = {
     },
     {
       id: "billing",
-      image: require("./assets/billing.png"),
+      image: process.env.PUBLIC_URL + "/projects/billing.png",
       projectName: "Billing",
       projectDesc: "Developed a portal to visualize monthly resource costs for ADA tenants, presenting data through pie charts, bar graphs, and tables for easy analysis",
       footerLink: [
@@ -258,7 +234,7 @@ const bigProjects = {
     },
     {
       id: "kill-analog",
-      image: require("./assets/killAnalog.png"),
+      image: process.env.PUBLIC_URL + "/projects/killAnalog.png",
       projectName: "Kill Analog",
       projectDesc: "Developed a public web portal for credit cards, debit cards, and cash lines, building microservices and creating REST APIs to support the platform",
       footerLink: [
@@ -267,7 +243,7 @@ const bigProjects = {
     },
     {
       id: "pay-as-you-go",
-      image: require("./assets/dehaadiCreate.jpeg"),
+      image: process.env.PUBLIC_URL + "/projects/dehaadiCreate.jpeg",
       projectName: "Pay as you go - Dehaadi",
       projectDesc: "Onboard Daily Subscriptions, while pay and maintain records on the same platform",
       footerLink: [
@@ -276,7 +252,7 @@ const bigProjects = {
     },
     {
       id: "website-walkthrough",
-      image: require("./assets/genie.png"),
+      image: process.env.PUBLIC_URL + "/projects/genie.png",
       projectName: "Website Walkthrough",
       projectDesc: "A virtual assistant for the not so tech savvy people, it helps to get guided walkthrough of a website based on an individual’s query.",
       footerLink: [
@@ -285,7 +261,7 @@ const bigProjects = {
     },
     {
       id: "electoral-voting-application",
-      image: require("./assets/voting.png"),
+      image: process.env.PUBLIC_URL + "/projects/voting.png",
       projectName: "Electoral Voting Application",
       projectDesc: "Based on Ethereum blockchain an application to vote for different candidates.",
       footerLink: [
@@ -298,59 +274,6 @@ const bigProjects = {
 
 // Achievement Section
 // Include certificates, talks etc
-const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle: "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
-  achievementsCards: [
-    {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        { name: "Certification", url: "" },
-        { name: "Final Project", url: "https://pakistan-olx-1.firebaseapp.com/" }
-      ]
-    }
-  ],
-  display: false // Set false to hide this section, defaults to true
-};
 
 // Blogs Section
 const blogSection = {
@@ -431,7 +354,7 @@ const recommendationSection = {
     name: "Andrea Pace",
     designation: "Senior Software Engineer",
     company: "Zalando",
-    image: require("./assets/recommendation/andrea.jpeg"),
+    image: process.env.PUBLIC_URL + "/recommendation/andrea.jpeg",
     recommendation:
       `I've had the pleasure of working with Harmeet at Zalando, and she is truly outstanding as a Senior Frontend Engineer. Her technical skills are top-notch, always delivering elegant and efficient solutions to complex problems. Harmeet's deep knowledge of modern frontend technologies and her keen analytical mind ensure our projects run smoothly and exceed user expectations. Her analytical mindset, often lets her anticipate potential issues before they arise and address them proactively.
       What really sets Harmeet apart is her leadership. When our engineering manager was unavailable, she stepped up and led the team confidently and clearly. Her communication skills and positive attitude kept us all motivated and on track. She's not just a leader by title but by action, always ready to support and guide her colleagues.
@@ -441,7 +364,7 @@ const recommendationSection = {
     name: "Shivam Tyagi",
     designation: "Senior Technical Lead",
     company: "Paytm",
-    image: require("./assets/recommendation/shivam.jpeg"),
+    image: process.env.PUBLIC_URL + "/recommendation/shivam.jpeg",
     recommendation:
       `Harmeet is one of the best colleague you could have in your team. Her expertise as a developer is considerable, and it helped our team come up with more efficient solutions on different projects. Her contribution is valuable to the side, and I highly recommend Harmeet and would love to work with her again.`
   },
@@ -449,7 +372,7 @@ const recommendationSection = {
     name: "Aloysius Lim",
     designation: "Frontend Engineer",
     company: "DBS",
-    image: require("./assets/recommendation/aloysius.jpeg"),
+    image: process.env.PUBLIC_URL + "/recommendation/aloysius.jpeg",
     recommendation:
       `Working with Harmeet was an great experience! She possesses a strong technical expertise and a great personality to work with. Having her in the team really helped get stuff done quickly and effectively. Knowing that you could easily reach out to her for any questions, bounce off ideas and working together with her, I’m sure that she can surely bring value and change to any organization that she joins! Thank you Harmeet for the good working experience and crossing of paths! I know you’ll surely do good and become an ever more seasoned developer and all the best!`
   },
@@ -457,7 +380,7 @@ const recommendationSection = {
     name: "Ayan Pal",
     designation: "Senior Engineering Manager",
     company: "Walmart",
-    image: require("./assets/recommendation/ayan.jpeg"),
+    image: process.env.PUBLIC_URL + "/recommendation/ayan.jpeg",
     recommendation:
       `Harmeet is a highly skilled developer. At Paytm she has excelled in taking difficult and mission-critical projects which require someone to quickly learn new technologies or do deep research for some difficult problems. I wish her all the best for all future endeavours.`
   },
@@ -465,7 +388,7 @@ const recommendationSection = {
     name: "Manikanta Tankala",
     designation: "Senior UI Developer",
     company: "DBS",
-    image: require("./assets/recommendation/mani.jpeg"),
+    image: process.env.PUBLIC_URL + "/recommendation/mani.jpeg",
     recommendation:
       `Harmeet is a professional developer with much focus on user experience. She learns new things, takes feedback well, implements new features with ease and collaborates well with other users. She is always a great asset to any team she works with.`
   },
@@ -473,7 +396,7 @@ const recommendationSection = {
     name: "Mark Sinapilo",
     designation: "Engineering Lead",
     company: "DBS",
-    image: require("./assets/recommendation/mark.jpeg"),
+    image: process.env.PUBLIC_URL + "/recommendation/mark.jpeg",
     recommendation:
       `Harmeet is an excellent developer. She is focused, resourceful and a team player. She learns fast and not afraid to try new technologies. I have enjoyed working with Harmeet and would be happy to work with her again. She is definitely a great addition to any team she joins.`
   },
@@ -481,7 +404,7 @@ const recommendationSection = {
     name: "Yury Shevchenko",
     designation: "Senior Frontend Engineer",
     company: "AWS",
-    image: require("./assets/recommendation/yury.jpeg"),
+    image: process.env.PUBLIC_URL + "/recommendation/yury.jpeg",
     recommendation:
       `Harmeet is a developer with a lot of potential; she has grown a lot in the two years that we worked together. She takes feedback well, she is eager to learn, and she makes considerable effort to become better. She's a good team player, she can productively collaborate with other teams, and she can work independently on solo projects to deliver them on time. `
   },
@@ -489,7 +412,7 @@ const recommendationSection = {
     name: "Arvind Sinha",
     designation: "Engineering Lead",
     company: "JP Morgan",
-    image: require("./assets/recommendation/arvind.jpeg"),
+    image: process.env.PUBLIC_URL + "/recommendation/arvind.jpeg",
     recommendation:
       `Harmeet is one of the brightest mind I have worked with. She is very sharp and has been very successful in providing complex solutions. I have seen some of the very innovative solutions that she has worked ,and at the same time she has phenomenal presentation skill to present the idea and sell. Keep doing great work, have high expectations from her to contribute in the transformation journey that we are into.`
   },
@@ -497,7 +420,7 @@ const recommendationSection = {
     name: "Ankur Khera",
     designation: "Head of Innovation",
     company: "DBS",
-    image: require("./assets/recommendation/ankur.jpeg"),
+    image: process.env.PUBLIC_URL + "/recommendation/ankur.jpeg",
     recommendation:
       `Harmeet is from the tribe of innovators at DBS who is self driven, is a a quick learner, ambitious, skilled at experimentation and strive to be at the cutting edge of technology. She is super committed who has repeatedly shown her desire to build futuristic solutions and is writing the script for the future! `
   },
@@ -505,7 +428,7 @@ const recommendationSection = {
     name: "Saurav Mishra",
     designation: "Technology Lead",
     company: "Infosys",
-    image: require("./assets/recommendation/saurav.jpeg"),
+    image: process.env.PUBLIC_URL + "/recommendation/saurav.jpeg",
     recommendation:
       `Harmeet has worked with me for almost a year and one trait on her that i can definitely vouch for is diligence. It's rare to come by. 
 Keep shining!! `
@@ -520,12 +443,10 @@ export {
   socialMediaLinks,
   splashScreen,
   skillsSection,
-  educationInfo,
   techStack,
   workExperiences,
   openSource,
   bigProjects,
-  achievementSection,
   blogSection,
   talkSection,
   podcastSection,

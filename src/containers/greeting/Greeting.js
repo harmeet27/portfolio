@@ -42,7 +42,7 @@ export default function Greeting() {
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
                    <a
-                    href="/2025HKResume.pdf" // PDF should be in public/
+                    href={process.env.PUBLIC_URL + "/2025HKResume.pdf"} // PDF should be in public/
                     download="Resume.pdf"
                     className="download-link-button"
                   >
@@ -58,7 +58,7 @@ export default function Greeting() {
             ) : (
               <img
                 alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
+                src={process.env.PUBLIC_URL + "/images/manOnTable.svg"}
               ></img>
             )}
           </div>
