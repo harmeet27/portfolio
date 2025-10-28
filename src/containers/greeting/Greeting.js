@@ -42,8 +42,8 @@ export default function Greeting() {
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
                    <a
-                    href={process.env.PUBLIC_URL + "/2025HKResume.pdf"} // PDF should be in public/
-                    download="Resume.pdf"
+                    href={process.env.PUBLIC_URL + "/HK_2025.pdf"} // PDF should be in public/
+                    download="Harmeet_Kaur_Resume.pdf"
                     className="download-link-button"
                   >
                     <Button text="Download my resume" />
