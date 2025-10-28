@@ -1,6 +1,5 @@
 import React from "react";
 import "./experience.css";
-// import Card from "../Card/Card";
 
 import { experience } from "../../data/experience.js";
 
@@ -8,17 +7,22 @@ class Experience extends React.PureComponent {
   render() {
     return (
       <div className="timeline">
-        {experience.map((logo) => {
-          return (
-              <div className="timeline-event">
-                <div className="logo" ><img src={logo.icon} alt={logo.name}/></div>
-                {/* <div> */}
-                <span className="timeline-year">{logo.year} {logo.name} ({logo.position})</span>
-                <div className="timeline-description">{logo.description}</div>
-                {/* </div> */}
+        <h2 className="timeline-title">Professional Experience</h2>
+        <div className="timeline-container">
+          {experience.map((item, index) => {
+            return (
+              <div className="timeline-event" key={index}>
+                <div className="logo">
+                  <img src={item.icon} alt={item.name}/>
+                </div>
+                <div className="timeline-content">
+                  <span className="timeline-year">{item.year} • {item.name} • {item.position}</span>
+                  <div className="timeline-description">{item.description}</div>
+                </div>
               </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     );
   }
