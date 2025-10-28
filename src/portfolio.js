@@ -140,7 +140,7 @@ const workExperiences = {
     {
       role: "Senior Software Engineer",
       company: "Paytm",
-      companylogo: require("./assets/companies/paytm.jpg"),
+      companylogo: require("./assets/companies/one97.jpg"),
       date: "Nov 2020 – May 2022",
       desc: "Delivered high-performance frontend solutions for one of India’s leading digital payment and financial services platforms, enhancing user experience and platform scalability",
       descBullets: [
@@ -167,7 +167,7 @@ const workExperiences = {
     {
       role: "Software Engineer",
       company: "Infosys",
-      companylogo: require("./assets/companies/infosys.jpg"),
+      companylogo: require("./assets/companies/infy.jpg"),
       date: "Sep 2015 – Nov 2017",
       desc: "Joined right after graduation, trained in Python and SAP ABAP, delivering enterprise-grade solutions for production SAP systems.",
       descBullets: [
