@@ -8,12 +8,14 @@ export default function StartupProject() {
   function openUrlInNewTab(url) {
   if (!url) return;
 
-  // For internal routes, prepend the hash if missing
+  let fullUrl = url;
+
   if (url.startsWith("/")) {
-    url = `${window.location.origin}/#${url}`;
+    // Ensure the hash (#) comes right after the domain for HashRouter
+    fullUrl = `${window.location.origin}/#${url}`;
   }
 
-  const win = window.open(url, "_blank", "noopener,noreferrer");
+  const win = window.open(fullUrl, "_blank", "noopener,noreferrer");
   if (win) win.focus();
 }
 
