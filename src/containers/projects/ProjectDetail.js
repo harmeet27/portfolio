@@ -22,7 +22,10 @@ export default function ProjectDetail({ match, history }) {
         <div className={isDark ? "dark-mode project-card" : "project-card"}>
           {project.icon && (
             <div className="project-hero">
-              {project.video ? <video controls src={project.video} className="project-video" /> : <img src={project.icon} alt={project.title} />}
+              {project.video ? <video controls width="640" height="360" className="project-video">
+                <source src={project.video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video> : <img src={project.icon} alt={project.title} />}
             </div>
           )}
 
