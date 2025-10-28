@@ -41,8 +41,8 @@ export default function Greeting() {
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
-                  <a
-                    href={require("../../assets/2025HKResume.pdf")}
+                   <a
+                    href="/2025HKResume.pdf" // PDF should be in public/
                     download="Resume.pdf"
                     className="download-link-button"
                   >
