@@ -2,6 +2,7 @@ name: Build and Deploy React App
 
 env:
   CI: false
+  GITHUB_USERNAME: ${{ github.repository_owner }}
   REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   USE_GITHUB_DATA: "true"
 
@@ -37,10 +38,9 @@ jobs:
       - name: Install Dependencies 🔧
         run: npm ci
 
-      # 5️⃣ Build React app
+      # 5️⃣ Build React app with required env variables
       - name: Build React App 📦
-        run: |
-          npm run build
+        run: npm run build
 
       # 6️⃣ Ensure .nojekyll and CNAME exist
       - name: Prepare Deployment Files ⚙️
