@@ -127,6 +127,17 @@ export default function socialMedia() {
           <span></span>
         </a>
       ) : null}
+      {socialMediaLinks.topmate ? (
+        <a
+          href={socialMediaLinks.topmate}
+          className="icon-button topmate"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-tumblr-square"></i>
+          <span></span>
+        </a>
+      ) : null}
     </div>
   );
 }
