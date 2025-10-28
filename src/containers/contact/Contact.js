@@ -5,6 +5,7 @@ import {illustration, contactInfo} from "../../portfolio";
 import {Fade} from "react-reveal";
 import email from "../../assets/lottie/email";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+import Address from "../../components/Address/Address";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Contact() {
@@ -50,6 +51,8 @@ export default function Contact() {
               <br />
               <br />
               <SocialMedia />
+              <div id="address" className="empty-div"></div>
+              <Address />
             </div>
           </div>
           <div className="contact-image-div">

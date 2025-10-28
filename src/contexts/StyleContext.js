@@ -1,6 +1,11 @@
 import React from "react";
 
-const StyleContext = React.createContext();
+const defaultStyle = {
+  isDark: false,
+  changeTheme: () => {}
+};
+
+const StyleContext = React.createContext(defaultStyle);
 
 export const StyleProvider = StyleContext.Provider;
 export const StyleConsumer = StyleContext.Consumer;
