@@ -30,7 +30,7 @@ jobs:
           node-version: 20.17.0
           cache: npm
 
-      # 3️⃣ Install npm latest
+      # 3️⃣ Update npm to latest
       - name: Update npm 🚀
         run: npm install -g npm@latest
 
@@ -38,18 +38,20 @@ jobs:
       - name: Install Dependencies 🔧
         run: npm ci
 
-      # 5️⃣ Build React app with required env variables
+      # 5️⃣ Build React app with environment variables
       - name: Build React App 📦
         run: npm run build
 
-      # 6️⃣ Ensure .nojekyll and CNAME exist
+      # 6️⃣ Prepare deployment files
       - name: Prepare Deployment Files ⚙️
         run: |
           cd build
-          # Create .nojekyll to prevent Jekyll processing
+          # Disable Jekyll
           touch .nojekyll
-          # Create CNAME for custom domain
+          # Add custom domain
           echo "kaurharmeet.com" > CNAME
+          # Add 404.html fallback for React Router
+          cp index.html 404.html
           cd ..
 
       # 7️⃣ Deploy to gh-pages
