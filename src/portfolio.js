@@ -28,7 +28,6 @@ const greeting = {
 
 // Social Media Links
 const socialMediaLinks = {
-  github: "https://github.com/harmeet27",
   linkedin: "https://www.linkedin.com/in/harmeet-kaur-8856ba44/",
   gmail: "harmeetkaur2793@gmail.com",
   instagram: "https://www.instagram.com/theserendipitycode/",
