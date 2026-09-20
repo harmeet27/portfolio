@@ -47,24 +47,24 @@ const address = {
 // Skills Section
 const skillsSection = {
   title: "What I Do",
-subTitle: "An Engineering Manager with a strong frontend foundation, dedicated to leading full-stack teams, scaling systems, and driving AI-powered engineering excellence",
-skills: [
-  emoji(
-    "⚡ Lead full-stack and frontend engineering teams delivering high-performance, user-centric web platforms at scale"
-  ),
-  emoji(
-    "⚡ Guide system architecture and technical design across modern frontend, microservices, and event-driven backend systems"
-  ),
-  emoji(
-    "⚡ Drive engineering velocity by integrating AI tools across the SDLC, building internal marketplace skills, and automating operational workflows"
-  ),
-  emoji(
-    "⚡ Foster high-ownership engineering cultures through active mentorship, career development, performance management, and continuous learning"
-  ),
-  emoji(
-    "⚡ Partner seamlessly with Product, Design, and Platform teams to align technical roadmaps with high-impact business OKRs"
-  )
-]
+  subTitle: "An Engineering Manager with a strong frontend foundation, dedicated to leading full-stack teams, scaling systems, and driving AI-powered engineering excellence",
+  skills: [
+    emoji(
+      "⚡ Lead full-stack and frontend engineering teams delivering high-performance, user-centric web platforms at scale"
+    ),
+    emoji(
+      "⚡ Guide system architecture and technical design across modern frontend, microservices, and event-driven backend systems"
+    ),
+    emoji(
+      "⚡ Drive engineering velocity by integrating AI tools across the SDLC, building internal marketplace skills, and automating operational workflows"
+    ),
+    emoji(
+      "⚡ Foster high-ownership engineering cultures through active mentorship, career development, performance management, and continuous learning"
+    ),
+    emoji(
+      "⚡ Partner seamlessly with Product, Design, and Platform teams to align technical roadmaps with high-impact business OKRs"
+    )
+  ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
   https://fontawesome.com/icons?d=gallery */
