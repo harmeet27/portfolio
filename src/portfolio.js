@@ -46,23 +46,25 @@ const address = {
 
 // Skills Section
 const skillsSection = {
-  title: "What I do",
-  subTitle: "A frontend-focused engineering leader passionate about building seamless, high-performance web experiences and empowering teams to excel",
-  skills: [
-    emoji(
-      "⚡ Lead teams that craft highly interactive, user-centered interfaces for scalable web applications"
-    ),
-    emoji("⚡ Brings structure and scalability through component-driven design, clean architecture, and performance-first principles"),
-    emoji(
-      "⚡ Drive engineering excellence by fostering collaboration, code quality, and a culture of continuous learning"
-    ),
-    emoji(
-      "⚡ Dedicated to mentorship and inclusion, actively championing Women in Tech and nurturing the next generation of frontend engineers"
-    ),
-    emoji(
-      "⚡ Collaborates closely with design and product teams to deliver beautiful, accessible, and meaningful user experiences"
-    )
-  ],
+  title: "What I Do",
+subTitle: "An Engineering Manager with a strong frontend foundation, dedicated to leading full-stack teams, scaling systems, and driving AI-powered engineering excellence",
+skills: [
+  emoji(
+    "⚡ Lead full-stack and frontend engineering teams delivering high-performance, user-centric web platforms at scale"
+  ),
+  emoji(
+    "⚡ Guide system architecture and technical design across modern frontend, microservices, and event-driven backend systems"
+  ),
+  emoji(
+    "⚡ Drive engineering velocity by integrating AI tools across the SDLC, building internal marketplace skills, and automating operational workflows"
+  ),
+  emoji(
+    "⚡ Foster high-ownership engineering cultures through active mentorship, career development, performance management, and continuous learning"
+  ),
+  emoji(
+    "⚡ Partner seamlessly with Product, Design, and Platform teams to align technical roadmaps with high-impact business OKRs"
+  )
+]
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
   https://fontawesome.com/icons?d=gallery */
