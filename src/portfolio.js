@@ -20,7 +20,7 @@ const illustration = {
 const greeting = {
   username: "Harmeet Kaur",
   title: "Hi all, I'm Harmeet",
-  subTitle: emoji(`Engineering leader specializing in frontend development and scalable systems. I bridge technical excellence with team growth—creating environments where engineers thrive, architecture stays clean, and users stay delighted.`),
+  subTitle: emoji(`Engineering Manager with 10+ years of software engineering experience, including 3+ years directly managing, hiring, and scaling high-performing frontend and full-stack engineering teams. Experienced in guiding complex backend and frontend architecture discussions (HLD/LLD), executing active performance management, and driving AI enablement across the SDLC to boost developer productivity. Proven track record of aligning engineering roadmaps with business OKRs while cultivating high-performing engineering cultures.`),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -99,17 +99,20 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Engineering Lead",
+      role: "Engineering Manager",
       company: "Zalando",
       companylogo: process.env.PUBLIC_URL + "/companies/zalando.png",
       date: "May 2022 – Present",
-      desc: `Driving scalable frontend initiatives and leading a high-performing team to deliver impactful user experiences on Europe’s leading fashion and lifestyle platform`,
+      desc: `Driving scalable initiatives and leading a high-performing team to deliver impactful user journeys on Europe’s leading fashion and lifestyle platform`,
       descBullets: [
-        "Promoted twice in 3 years — now leading a team of 6 engineers delivering large-scale frontend initiatives",
-        "Drive roadmap execution and collaborate with Product and Design to deliver seamless user experiences",
-        "Mentor engineers, run agile ceremonies, and foster a culture of ownership and continuous improvement",
-        "Modernized frontend stack (React, TypeScript, GraphQL to improve performance and scalability by 40%",
-        "Balance hands-on coding with strategic planning to ensure timely, high-quality releases"
+       "Promoted to Engineering Manager in 3 years — currently leading a team of 8 full-stack engineers delivering large-scale platform initiatives",
+       "Drive roadmap execution, capacity planning, and cross-functional alignment with Product, Design, and Platform Leads to deliver strategic business OKRs",
+       "Mentor engineers, run agile ceremonies, and foster a high-ownership culture while driving active performance management and tailored growth plans",
+       "Guide High-Level and Technical Design discussions across Spring Boot, Kotlin, PostgreSQL, Event-Driven Architecture, and Open Policy Agent (OPA)",
+       "Champion team-wide AI adoption by directing an internal AI marketplace, launching custom operational review agents, and establishing safety guardrails across the SDLC",
+       "Establish engineering best practices for frontend architecture, testing, and system observability using Grafana and Sentry to improve reliability and reduce incident response times",
+       "Lead technical hiring pipelines and onboarding strategies to scale engineering capacity while maintaining high candidate quality standards",
+       "Delivered core retail center frontend applications with end-to-end technical ownership, improving system stability and application performance"
       ]
     },
     {
